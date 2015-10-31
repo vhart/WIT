@@ -1,2 +1,4 @@
 pod 'SlackTextViewController'
 pod "AFNetworking", "~> 2.6"
+pod 'Parse'
+pod 'ParseUI', '~> 1.1'

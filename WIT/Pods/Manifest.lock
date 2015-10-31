@@ -20,14 +20,25 @@ PODS:
   - AFNetworking/UIKit (2.6.1):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - Bolts/Tasks (1.4.0)
+  - Parse (1.9.1):
+    - Bolts/Tasks (>= 1.4.0)
+  - ParseUI (1.1.6):
+    - Bolts/Tasks (~> 1.2)
+    - Parse (~> 1.8)
   - SlackTextViewController (1.7.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.6)
+  - Parse
+  - ParseUI (~> 1.1)
   - SlackTextViewController
 
 SPEC CHECKSUMS:
   AFNetworking: 8e4e60500beb8bec644cf575beee72990a76d399
+  Bolts: 0e9bce58b9b9f5e8a7a4d47b16d2fabec289072b
+  Parse: 54a965c8c19a6dde90284ab654dbcc77ef8c001b
+  ParseUI: 8a22e448c03f825203d8c379c80523517f68baa3
   SlackTextViewController: 139ffc5b09276ff5ac1609ac78eafab702fc974e
 
 COCOAPODS: 0.38.2
