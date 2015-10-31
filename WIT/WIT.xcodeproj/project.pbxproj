@@ -15,6 +15,8 @@
 		848D73CA1BE52E98009325C5 /* AddNewSalaryStory.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D73C91BE52E98009325C5 /* AddNewSalaryStory.m */; };
 		848D73CC1BE53BE8009325C5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E391BE51F580097412F /* AppDelegate.m */; };
 		848D73CF1BE53E6D009325C5 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D73CE1BE53E6D009325C5 /* TabBarController.m */; settings = {ASSET_TAGS = (); }; };
+		848D73D31BE54E87009325C5 /* SalaryStoriesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848D73D21BE54E87009325C5 /* SalaryStoriesCell.xib */; settings = {ASSET_TAGS = (); }; };
+		848D73D61BE5526B009325C5 /* SalaryStoriesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D73D51BE5526B009325C5 /* SalaryStoriesCell.m */; settings = {ASSET_TAGS = (); }; };
 		C7E92E371BE51F580097412F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E361BE51F580097412F /* main.m */; };
 		C7E92E401BE51F580097412F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7E92E3E1BE51F580097412F /* Main.storyboard */; };
 		C7E92E431BE51F580097412F /* WIT.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E411BE51F580097412F /* WIT.xcdatamodeld */; };
@@ -57,6 +59,9 @@
 		848D73C91BE52E98009325C5 /* AddNewSalaryStory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNewSalaryStory.m; sourceTree = "<group>"; };
 		848D73CD1BE53E6C009325C5 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
 		848D73CE1BE53E6D009325C5 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
+		848D73D21BE54E87009325C5 /* SalaryStoriesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SalaryStoriesCell.xib; sourceTree = "<group>"; };
+		848D73D41BE5526B009325C5 /* SalaryStoriesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SalaryStoriesCell.h; sourceTree = "<group>"; };
+		848D73D51BE5526B009325C5 /* SalaryStoriesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SalaryStoriesCell.m; sourceTree = "<group>"; };
 		C7E92E321BE51F580097412F /* WIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WIT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7E92E361BE51F580097412F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C7E92E381BE51F580097412F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -133,6 +138,9 @@
 			children = (
 				848D73C11BE52E4A009325C5 /* SalaryStories.h */,
 				848D73C21BE52E4A009325C5 /* SalaryStories.m */,
+				848D73D21BE54E87009325C5 /* SalaryStoriesCell.xib */,
+				848D73D41BE5526B009325C5 /* SalaryStoriesCell.h */,
+				848D73D51BE5526B009325C5 /* SalaryStoriesCell.m */,
 				848D73C51BE52E6B009325C5 /* SalaryStoryChat.h */,
 				848D73C61BE52E6B009325C5 /* SalaryStoryChat.m */,
 				848D73C81BE52E98009325C5 /* AddNewSalaryStory.h */,
@@ -348,6 +356,7 @@
 			files = (
 				C7E92E481BE51F580097412F /* LaunchScreen.storyboard in Resources */,
 				C7E92E451BE51F580097412F /* Assets.xcassets in Resources */,
+				848D73D31BE54E87009325C5 /* SalaryStoriesCell.xib in Resources */,
 				C7E92E401BE51F580097412F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,6 +422,7 @@
 				848D73C31BE52E4A009325C5 /* SalaryStories.m in Sources */,
 				C7E92E431BE51F580097412F /* WIT.xcdatamodeld in Sources */,
 				848D73CA1BE52E98009325C5 /* AddNewSalaryStory.m in Sources */,
+				848D73D61BE5526B009325C5 /* SalaryStoriesCell.m in Sources */,
 				C7E92E711BE52AD00097412F /* ChatResponse.m in Sources */,
 				848D73CF1BE53E6D009325C5 /* TabBarController.m in Sources */,
 				C7E92E6E1BE529E70097412F /* ChatPost.m in Sources */,

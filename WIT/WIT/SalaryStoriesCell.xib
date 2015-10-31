@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="103" id="wF1-nv-85B">
+            <rect key="frame" x="0.0" y="0.0" width="388" height="103"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wF1-nv-85B" id="KOY-E2-rNc">
+                <rect key="frame" x="0.0" y="0.0" width="388" height="102"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MKC-e3-3aK">
+                        <rect key="frame" x="8" y="8" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="gMV-Pm-avW"/>
+                            <constraint firstAttribute="width" constant="60" id="mdW-nw-nnd"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lia-pi-li2">
+                        <rect key="frame" x="340" y="8" width="40" height="86"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKw-9b-8Sc">
+                                <rect key="frame" x="15" y="33" width="11" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHZ-eV-RfX">
+                                <rect key="frame" x="6" y="-4" width="30" height="30"/>
+                                <state key="normal" title="/\"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFh-PI-vnO">
+                                <rect key="frame" x="8" y="56" width="30" height="30"/>
+                                <state key="normal" title="\/"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="6JD-EP-bKo"/>
+                            <constraint firstItem="cKw-9b-8Sc" firstAttribute="centerY" secondItem="Lia-pi-li2" secondAttribute="centerY" id="BLJ-zA-rw8"/>
+                            <constraint firstItem="cKw-9b-8Sc" firstAttribute="centerX" secondItem="Lia-pi-li2" secondAttribute="centerX" id="Crc-8G-ONM"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title of the story" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nsO-gw-EFe">
+                        <rect key="frame" x="73" y="41" width="262" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Lia-pi-li2" firstAttribute="leading" secondItem="nsO-gw-EFe" secondAttribute="trailing" id="ElT-tY-m6w"/>
+                    <constraint firstItem="Lia-pi-li2" firstAttribute="leading" secondItem="nsO-gw-EFe" secondAttribute="trailing" constant="5" id="FwE-Cg-vRr"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Lia-pi-li2" secondAttribute="bottom" id="GVo-Vj-HDV"/>
+                    <constraint firstItem="nsO-gw-EFe" firstAttribute="leading" secondItem="MKC-e3-3aK" secondAttribute="trailing" constant="5" id="Jf5-FE-aDL"/>
+                    <constraint firstItem="nsO-gw-EFe" firstAttribute="centerY" secondItem="KOY-E2-rNc" secondAttribute="centerY" id="JiY-KH-R8n"/>
+                    <constraint firstItem="MKC-e3-3aK" firstAttribute="leading" secondItem="KOY-E2-rNc" secondAttribute="leadingMargin" id="a6b-sj-tTE"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Lia-pi-li2" secondAttribute="trailing" id="nDF-w7-BRa"/>
+                    <constraint firstItem="MKC-e3-3aK" firstAttribute="top" secondItem="KOY-E2-rNc" secondAttribute="topMargin" id="sYr-5E-hc2"/>
+                    <constraint firstItem="Lia-pi-li2" firstAttribute="top" secondItem="KOY-E2-rNc" secondAttribute="topMargin" id="zIn-MU-2Nx"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="ElT-tY-m6w"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-309" y="-165.5"/>
+        </tableViewCell>
+    </objects>
+</document>
