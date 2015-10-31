@@ -21,6 +21,7 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - Bolts/Tasks (1.4.0)
+  - FoldingTabBar (1.0.1)
   - Parse (1.9.1):
     - Bolts/Tasks (>= 1.4.0)
   - ParseUI (1.1.6):
@@ -30,6 +31,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 2.6)
+  - FoldingTabBar (~> 1.0.1)
   - Parse
   - ParseUI (~> 1.1)
   - SlackTextViewController
@@ -37,6 +39,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: 8e4e60500beb8bec644cf575beee72990a76d399
   Bolts: 0e9bce58b9b9f5e8a7a4d47b16d2fabec289072b
+  FoldingTabBar: 3e04c49dbe2b02c529561a4182bf017b928d04d2
   Parse: 54a965c8c19a6dde90284ab654dbcc77ef8c001b
   ParseUI: 8a22e448c03f825203d8c379c80523517f68baa3
   SlackTextViewController: 139ffc5b09276ff5ac1609ac78eafab702fc974e
