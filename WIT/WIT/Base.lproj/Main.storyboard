@@ -222,7 +222,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" id="SrK-4A-2NN"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="business64" id="SrK-4A-2NN"/>
                     <connections>
                         <outlet property="userBackgroundImageView" destination="g8X-ed-RjQ" id="2B4-ai-zhf"/>
                         <outlet property="userCompanyLabel" destination="fxs-bw-rag" id="AJD-fJ-vYl"/>
@@ -324,6 +324,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <animations/>
                                 </tableViewCellContentView>
+                                <animations/>
                                 <connections>
                                     <segue destination="wMV-O4-inF" kind="show" id="I4V-LV-k77"/>
                                 </connections>
@@ -347,10 +348,12 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ykl-d4-1pu">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="7CI-eR-jZP">
                             <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <animations/>
                             <items>
                                 <navigationItem title="Title" id="lrk-aF-pNK">
                                     <barButtonItem key="rightBarButtonItem" systemItem="add" id="BX3-td-hXR">
@@ -368,7 +371,9 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="keb-du-ycq" id="Ps6-KN-ZXn">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
                                 </tableViewCellContentView>
+                                <animations/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -397,12 +402,14 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M1x-Jf-QOO">
                                 <rect key="frame" x="26" y="72" width="34" height="30"/>
+                                <animations/>
                                 <state key="normal" title="back"/>
                                 <connections>
                                     <segue destination="wMV-O4-inF" kind="show" id="3IA-xn-fZ0"/>
                                 </connections>
                             </button>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
@@ -432,6 +439,7 @@
     </scenes>
     <resources>
         <image name="Diana" width="243" height="243"/>
+        <image name="business64" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="3IA-xn-fZ0"/>
