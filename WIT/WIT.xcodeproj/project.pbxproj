@@ -14,6 +14,7 @@
 		848D73C71BE52E6B009325C5 /* SalaryStoryChat.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D73C61BE52E6B009325C5 /* SalaryStoryChat.m */; };
 		848D73CA1BE52E98009325C5 /* AddNewSalaryStory.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D73C91BE52E98009325C5 /* AddNewSalaryStory.m */; };
 		848D73CC1BE53BE8009325C5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E391BE51F580097412F /* AppDelegate.m */; };
+		848D73CF1BE53E6D009325C5 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D73CE1BE53E6D009325C5 /* TabBarController.m */; settings = {ASSET_TAGS = (); }; };
 		C7E92E371BE51F580097412F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E361BE51F580097412F /* main.m */; };
 		C7E92E401BE51F580097412F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7E92E3E1BE51F580097412F /* Main.storyboard */; };
 		C7E92E431BE51F580097412F /* WIT.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E411BE51F580097412F /* WIT.xcdatamodeld */; };
@@ -54,6 +55,8 @@
 		848D73C61BE52E6B009325C5 /* SalaryStoryChat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SalaryStoryChat.m; sourceTree = "<group>"; };
 		848D73C81BE52E98009325C5 /* AddNewSalaryStory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNewSalaryStory.h; sourceTree = "<group>"; };
 		848D73C91BE52E98009325C5 /* AddNewSalaryStory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNewSalaryStory.m; sourceTree = "<group>"; };
+		848D73CD1BE53E6C009325C5 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		848D73CE1BE53E6D009325C5 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
 		C7E92E321BE51F580097412F /* WIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WIT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7E92E361BE51F580097412F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C7E92E381BE51F580097412F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -187,6 +190,8 @@
 				C7E92E6B1BE529A50097412F /* Chat Section */,
 				848D73C41BE52E4D009325C5 /* SalarySection */,
 				C7E92E3E1BE51F580097412F /* Main.storyboard */,
+				848D73CD1BE53E6C009325C5 /* TabBarController.h */,
+				848D73CE1BE53E6D009325C5 /* TabBarController.m */,
 				C7E92E441BE51F580097412F /* Assets.xcassets */,
 				C7E92E461BE51F580097412F /* LaunchScreen.storyboard */,
 				C7E92E491BE51F580097412F /* Info.plist */,
@@ -409,6 +414,7 @@
 				C7E92E431BE51F580097412F /* WIT.xcdatamodeld in Sources */,
 				848D73CA1BE52E98009325C5 /* AddNewSalaryStory.m in Sources */,
 				C7E92E711BE52AD00097412F /* ChatResponse.m in Sources */,
+				848D73CF1BE53E6D009325C5 /* TabBarController.m in Sources */,
 				C7E92E6E1BE529E70097412F /* ChatPost.m in Sources */,
 				C7E92E371BE51F580097412F /* main.m in Sources */,
 			);

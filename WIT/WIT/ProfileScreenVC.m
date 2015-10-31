@@ -21,6 +21,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+//    self.view.frame  =CGRectMake(0,50,self.view.bounds.size.width,self.view.bounds.size.height-50);
+
     // Do any additional setup after loading the view.
 }
 
@@ -28,7 +30,12 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+-(void) viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:YES];
+    
+//    self.view.frame  =CGRectMake(0,50,self.view.bounds.size.width,self.view.bounds.size.height-50);
 
+}
 /*
 #pragma mark - Navigation
 

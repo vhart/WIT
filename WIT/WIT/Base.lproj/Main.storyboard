@@ -247,10 +247,10 @@
             </objects>
             <point key="canvasLocation" x="1718" y="6"/>
         </scene>
-        <!--Tab Bar View Controller-->
+        <!--Tab Bar Controller-->
         <scene sceneID="e9t-9N-RtR">
             <objects>
-                <tabBarController id="vOA-Ld-ERE" customClass="TabBarViewController" sceneMemberID="viewController">
+                <tabBarController id="vOA-Ld-ERE" customClass="TabBarController" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="zbJ-cj-EQ2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
