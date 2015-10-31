@@ -18,6 +18,7 @@
 		C7E92E481BE51F580097412F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7E92E461BE51F580097412F /* LaunchScreen.storyboard */; };
 		C7E92E531BE51F580097412F /* WITTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E521BE51F580097412F /* WITTests.m */; };
 		C7E92E5E1BE51F590097412F /* WITUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E5D1BE51F590097412F /* WITUITests.m */; };
+		C7E92E7B1BE57D200097412F /* Media.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E7A1BE57D200097412F /* Media.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		C7E92E591BE51F590097412F /* WITUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WITUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7E92E5D1BE51F590097412F /* WITUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WITUITests.m; sourceTree = "<group>"; };
 		C7E92E5F1BE51F590097412F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7E92E791BE57D200097412F /* Media.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Media.h; sourceTree = "<group>"; };
+		C7E92E7A1BE57D200097412F /* Media.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Media.m; sourceTree = "<group>"; };
 		ECAAC0F33FC7485E1F856266 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F17A4E5F46EC349764F73446 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -188,6 +191,8 @@
 		C7E92E781BE57B970097412F /* Parse Media */ = {
 			isa = PBXGroup;
 			children = (
+				C7E92E791BE57D200097412F /* Media.h */,
+				C7E92E7A1BE57D200097412F /* Media.m */,
 			);
 			name = "Parse Media";
 			sourceTree = "<group>";
@@ -360,6 +365,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7E92E7B1BE57D200097412F /* Media.m in Sources */,
 				45E1334E1BE53EBF00A18C44 /* TabBarViewController.m in Sources */,
 				848D73CC1BE53BE8009325C5 /* AppDelegate.m in Sources */,
 				C7E92E431BE51F580097412F /* WIT.xcdatamodeld in Sources */,

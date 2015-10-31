@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "Media.h"
+#import <Parse/Parse.h>
 
 @interface AppDelegate ()
 
@@ -21,7 +23,8 @@
     [Parse setApplicationId:@"yJyQMarbdeE9NXa5bMQ69yjJdA4UsEZzhuGux2n2" clientKey:@"h3sfHEMcx5bwF2ddsnt64d0NS03URQRhhpLviA8E"];
     
     
-    [Media]
+    [Media registerSubclass];
+    
     return YES;
 }
 
