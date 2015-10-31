@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		227B5950C44DAAB03FDED46F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78D156BD9D23EF12B29F93FB /* libPods.a */; };
+		45E1334B1BE52AFA00A18C44 /* ProfileScreenVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E1334A1BE52AFA00A18C44 /* ProfileScreenVC.m */; };
 		C7E92E371BE51F580097412F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E361BE51F580097412F /* main.m */; };
 		C7E92E3A1BE51F580097412F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E391BE51F580097412F /* AppDelegate.m */; };
-		C7E92E3D1BE51F580097412F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E3C1BE51F580097412F /* ViewController.m */; };
+		C7E92E3D1BE51F580097412F /* LoginScreenVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E3C1BE51F580097412F /* LoginScreenVC.m */; };
 		C7E92E401BE51F580097412F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7E92E3E1BE51F580097412F /* Main.storyboard */; };
 		C7E92E431BE51F580097412F /* WIT.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E411BE51F580097412F /* WIT.xcdatamodeld */; };
 		C7E92E451BE51F580097412F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7E92E441BE51F580097412F /* Assets.xcassets */; };
@@ -37,13 +38,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		45E133491BE52AFA00A18C44 /* ProfileScreenVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileScreenVC.h; sourceTree = "<group>"; };
+		45E1334A1BE52AFA00A18C44 /* ProfileScreenVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileScreenVC.m; sourceTree = "<group>"; };
 		78D156BD9D23EF12B29F93FB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7E92E321BE51F580097412F /* WIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WIT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7E92E361BE51F580097412F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C7E92E381BE51F580097412F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C7E92E391BE51F580097412F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C7E92E3B1BE51F580097412F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C7E92E3C1BE51F580097412F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C7E92E3B1BE51F580097412F /* LoginScreenVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginScreenVC.h; sourceTree = "<group>"; };
+		C7E92E3C1BE51F580097412F /* LoginScreenVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginScreenVC.m; sourceTree = "<group>"; };
 		C7E92E3F1BE51F580097412F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C7E92E421BE51F580097412F /* WIT.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WIT.xcdatamodel; sourceTree = "<group>"; };
 		C7E92E441BE51F580097412F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -85,6 +88,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45E133471BE52A9700A18C44 /* Login Screen */ = {
+			isa = PBXGroup;
+			children = (
+				C7E92E3B1BE51F580097412F /* LoginScreenVC.h */,
+				C7E92E3C1BE51F580097412F /* LoginScreenVC.m */,
+			);
+			name = "Login Screen";
+			sourceTree = "<group>";
+		};
+		45E133481BE52AC500A18C44 /* Profile Screen */ = {
+			isa = PBXGroup;
+			children = (
+				45E133491BE52AFA00A18C44 /* ProfileScreenVC.h */,
+				45E1334A1BE52AFA00A18C44 /* ProfileScreenVC.m */,
+			);
+			name = "Profile Screen";
+			sourceTree = "<group>";
+		};
 		AB38C9C2BEEF3FC29F46FF02 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,10 +148,10 @@
 		C7E92E341BE51F580097412F /* WIT */ = {
 			isa = PBXGroup;
 			children = (
+				45E133471BE52A9700A18C44 /* Login Screen */,
+				45E133481BE52AC500A18C44 /* Profile Screen */,
 				C7E92E381BE51F580097412F /* AppDelegate.h */,
 				C7E92E391BE51F580097412F /* AppDelegate.m */,
-				C7E92E3B1BE51F580097412F /* ViewController.h */,
-				C7E92E3C1BE51F580097412F /* ViewController.m */,
 				C7E92E3E1BE51F580097412F /* Main.storyboard */,
 				C7E92E441BE51F580097412F /* Assets.xcassets */,
 				C7E92E461BE51F580097412F /* LaunchScreen.storyboard */,
@@ -335,8 +356,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45E1334B1BE52AFA00A18C44 /* ProfileScreenVC.m in Sources */,
 				C7E92E431BE51F580097412F /* WIT.xcdatamodeld in Sources */,
-				C7E92E3D1BE51F580097412F /* ViewController.m in Sources */,
+				C7E92E3D1BE51F580097412F /* LoginScreenVC.m in Sources */,
 				C7E92E3A1BE51F580097412F /* AppDelegate.m in Sources */,
 				C7E92E371BE51F580097412F /* main.m in Sources */,
 			);

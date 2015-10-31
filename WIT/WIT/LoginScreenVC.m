@@ -6,13 +6,13 @@
 //  Copyright © 2015 Varindra Hart. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "LoginScreenVC.h"
 
-@interface ViewController ()
+@interface LoginScreenVC ()
 
 @end
 
-@implementation ViewController
+@implementation LoginScreenVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
