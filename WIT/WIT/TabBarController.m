@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.tabBar.frame  =CGRectMake(0,0,self.view.bounds.size.width,50);
+//    self.tabBar.frame  =CGRectMake(0,0,self.view.bounds.size.width,50);
     // Do any additional setup after loading the view.
 }
 
