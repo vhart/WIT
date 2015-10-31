@@ -1,23 +1,22 @@
 //
-//  ProfileScreenVC.m
+//  TabBarController.m
 //  WIT
 //
-//  Created by Chris David on 10/31/15.
+//  Created by Diana Elezaj on 10/31/15.
 //  Copyright © 2015 Varindra Hart. All rights reserved.
 //
 
-#import "ProfileScreenVC.h"
+#import "TabBarController.h"
 
-@interface ProfileScreenVC ()
+@interface TabBarController ()
 
 @end
 
-@implementation ProfileScreenVC
+@implementation TabBarController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    self.view.frame  =CGRectMake(0,50,self.view.bounds.size.width,self.view.bounds.size.height-50);
-
+    self.tabBar.frame  =CGRectMake(0,0,self.view.bounds.size.width,50);
     // Do any additional setup after loading the view.
 }
 
@@ -25,12 +24,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
--(void) viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:YES];
-    
-//    self.view.frame  =CGRectMake(0,50,self.view.bounds.size.width,self.view.bounds.size.height-50);
 
-}
 /*
 #pragma mark - Navigation
 
