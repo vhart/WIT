@@ -27,6 +27,19 @@
     self.userImage.layer.masksToBounds = YES;
     self.userImage.layer.borderWidth = 1;
     
+    // show image
+    self.userBackgroundImageView.image = [UIImage imageNamed:@"Diana"];
+    
+    // create effect
+    UIBlurEffect *blur = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
+    
+    // add effect to an effect view
+    UIVisualEffectView *effectView = [[UIVisualEffectView alloc]initWithEffect:blur];
+    effectView.frame = self.view.frame;
+    
+    // add the effect view to the image view
+    [self.userBackgroundImageView addSubview:effectView];
+    
 
 }
 
