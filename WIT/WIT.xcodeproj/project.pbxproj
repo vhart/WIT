@@ -9,9 +9,10 @@
 /* Begin PBXBuildFile section */
 		227B5950C44DAAB03FDED46F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78D156BD9D23EF12B29F93FB /* libPods.a */; };
 		45E1334B1BE52AFA00A18C44 /* ProfileScreenVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E1334A1BE52AFA00A18C44 /* ProfileScreenVC.m */; };
-		848D73C31BE52E4A009325C5 /* SalaryStories.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D73C21BE52E4A009325C5 /* SalaryStories.m */; settings = {ASSET_TAGS = (); }; };
-		848D73C71BE52E6B009325C5 /* SalaryStoryChat.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D73C61BE52E6B009325C5 /* SalaryStoryChat.m */; settings = {ASSET_TAGS = (); }; };
-		848D73CA1BE52E98009325C5 /* AddNewSalaryStory.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D73C91BE52E98009325C5 /* AddNewSalaryStory.m */; settings = {ASSET_TAGS = (); }; };
+		45E1334E1BE53EBF00A18C44 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E1334D1BE53EBF00A18C44 /* TabBarViewController.m */; };
+		848D73C31BE52E4A009325C5 /* SalaryStories.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D73C21BE52E4A009325C5 /* SalaryStories.m */; };
+		848D73C71BE52E6B009325C5 /* SalaryStoryChat.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D73C61BE52E6B009325C5 /* SalaryStoryChat.m */; };
+		848D73CA1BE52E98009325C5 /* AddNewSalaryStory.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D73C91BE52E98009325C5 /* AddNewSalaryStory.m */; };
 		848D73CC1BE53BE8009325C5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E391BE51F580097412F /* AppDelegate.m */; };
 		C7E92E371BE51F580097412F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E361BE51F580097412F /* main.m */; };
 		C7E92E401BE51F580097412F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7E92E3E1BE51F580097412F /* Main.storyboard */; };
@@ -20,8 +21,8 @@
 		C7E92E481BE51F580097412F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7E92E461BE51F580097412F /* LaunchScreen.storyboard */; };
 		C7E92E531BE51F580097412F /* WITTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E521BE51F580097412F /* WITTests.m */; };
 		C7E92E5E1BE51F590097412F /* WITUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E5D1BE51F590097412F /* WITUITests.m */; };
-		C7E92E6E1BE529E70097412F /* ChatPost.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E6D1BE529E70097412F /* ChatPost.m */; settings = {ASSET_TAGS = (); }; };
-		C7E92E711BE52AD00097412F /* ChatResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E701BE52AD00097412F /* ChatResponse.m */; settings = {ASSET_TAGS = (); }; };
+		C7E92E6E1BE529E70097412F /* ChatPost.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E6D1BE529E70097412F /* ChatPost.m */; };
+		C7E92E711BE52AD00097412F /* ChatResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E701BE52AD00097412F /* ChatResponse.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 /* Begin PBXFileReference section */
 		45E133491BE52AFA00A18C44 /* ProfileScreenVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileScreenVC.h; sourceTree = "<group>"; };
 		45E1334A1BE52AFA00A18C44 /* ProfileScreenVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileScreenVC.m; sourceTree = "<group>"; };
+		45E1334C1BE53EBF00A18C44 /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		45E1334D1BE53EBF00A18C44 /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
 		78D156BD9D23EF12B29F93FB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		848D73C11BE52E4A009325C5 /* SalaryStories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SalaryStories.h; sourceTree = "<group>"; };
 		848D73C21BE52E4A009325C5 /* SalaryStories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SalaryStories.m; sourceTree = "<group>"; };
@@ -107,6 +110,8 @@
 			children = (
 				C7E92E3B1BE51F580097412F /* LoginScreenVC.h */,
 				C7E92E3C1BE51F580097412F /* LoginScreenVC.m */,
+				45E1334C1BE53EBF00A18C44 /* TabBarViewController.h */,
+				45E1334D1BE53EBF00A18C44 /* TabBarViewController.m */,
 			);
 			name = "Login Screen";
 			sourceTree = "<group>";
@@ -396,6 +401,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45E1334E1BE53EBF00A18C44 /* TabBarViewController.m in Sources */,
 				848D73CC1BE53BE8009325C5 /* AppDelegate.m in Sources */,
 				45E1334B1BE52AFA00A18C44 /* ProfileScreenVC.m in Sources */,
 				848D73C71BE52E6B009325C5 /* SalaryStoryChat.m in Sources */,

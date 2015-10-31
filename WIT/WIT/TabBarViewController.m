@@ -1,27 +1,24 @@
 //
-//  ProfileScreenVC.m
+//  TabBarViewController.m
 //  WIT
 //
 //  Created by Chris David on 10/31/15.
 //  Copyright © 2015 Varindra Hart. All rights reserved.
 //
 
-#import "ProfileScreenVC.h"
+#import "TabBarViewController.h"
 
-@interface ProfileScreenVC ()
-@property (weak, nonatomic) IBOutlet UIImageView *userImage;
-@property (weak, nonatomic) IBOutlet UILabel *userNameLabel;
-@property (weak, nonatomic) IBOutlet UILabel *userJobTitle;
-@property (weak, nonatomic) IBOutlet UILabel *userCompanyLabel;
-@property (weak, nonatomic) IBOutlet UIImageView *userBackgroundImageView;
+@interface TabBarViewController ()
 
 @end
 
-@implementation ProfileScreenVC
+@implementation TabBarViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+      self.tabBar.frame =CGRectMake(0,0,320,50);
+    
 }
 
 - (void)didReceiveMemoryWarning {
