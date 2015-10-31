@@ -67,7 +67,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="7H0-IO-ttv"/>
+                    <tabBarItem key="tabBarItem" title="Meetup" id="7H0-IO-ttv"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gvr-zO-GpR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -87,7 +87,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="AGe-Zp-Q0V"/>
+                    <tabBarItem key="tabBarItem" title="Chat" id="AGe-Zp-Q0V"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IE6-bf-e2R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -107,7 +107,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Yz1-d8-DYD"/>
+                    <tabBarItem key="tabBarItem" title="Salary" id="Yz1-d8-DYD"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XL8-nw-XMT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -234,7 +234,7 @@
                             <constraint firstItem="NKE-9Y-Hyi" firstAttribute="top" secondItem="xJU-rM-mqe" secondAttribute="bottom" id="zhh-mD-ijV"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="SrK-4A-2NN"/>
+                    <tabBarItem key="tabBarItem" title="Profile" id="SrK-4A-2NN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JWQ-y8-klW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
