@@ -21,9 +21,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
 //    self.view.frame  =CGRectMake(0,50,self.view.bounds.size.width,self.view.bounds.size.height-50);
+    self.userImage.layer.cornerRadius = 50;
+    self.userImage.layer.masksToBounds = YES;
+    self.userImage.layer.borderWidth = 1;
+    
 
-    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
