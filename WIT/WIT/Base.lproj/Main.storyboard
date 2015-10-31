@@ -257,11 +257,11 @@
             </objects>
             <point key="canvasLocation" x="280" y="1963"/>
         </scene>
-        <!--Item-->
+        <!--Chat-->
         <scene sceneID="tt9-Pq-EzW">
             <objects>
                 <navigationController id="nQu-nP-osL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="vLX-5q-HBz"/>
+                    <tabBarItem key="tabBarItem" title="Chat" id="vLX-5q-HBz"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="sPX-2k-Bqg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -303,11 +303,11 @@
             </objects>
             <point key="canvasLocation" x="1120" y="1963"/>
         </scene>
-        <!--Item-->
+        <!--Salary-->
         <scene sceneID="sb9-9p-bx1">
             <objects>
                 <navigationController id="SGp-FD-H0i" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Vij-6e-wkC"/>
+                    <tabBarItem key="tabBarItem" title="Salary" id="Vij-6e-wkC"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="EED-vQ-7gI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
