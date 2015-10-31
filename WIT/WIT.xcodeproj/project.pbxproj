@@ -21,6 +21,8 @@
 		C7E92E481BE51F580097412F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7E92E461BE51F580097412F /* LaunchScreen.storyboard */; };
 		C7E92E531BE51F580097412F /* WITTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E521BE51F580097412F /* WITTests.m */; };
 		C7E92E5E1BE51F590097412F /* WITUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E5D1BE51F590097412F /* WITUITests.m */; };
+		C7E92E6E1BE529E70097412F /* ChatPost.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E6D1BE529E70097412F /* ChatPost.m */; settings = {ASSET_TAGS = (); }; };
+		C7E92E711BE52AD00097412F /* ChatResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E701BE52AD00097412F /* ChatResponse.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,10 @@
 		C7E92E591BE51F590097412F /* WITUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WITUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7E92E5D1BE51F590097412F /* WITUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WITUITests.m; sourceTree = "<group>"; };
 		C7E92E5F1BE51F590097412F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7E92E6C1BE529E70097412F /* ChatPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatPost.h; sourceTree = "<group>"; };
+		C7E92E6D1BE529E70097412F /* ChatPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatPost.m; sourceTree = "<group>"; };
+		C7E92E6F1BE52AD00097412F /* ChatResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatResponse.h; sourceTree = "<group>"; };
+		C7E92E701BE52AD00097412F /* ChatResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatResponse.m; sourceTree = "<group>"; };
 		ECAAC0F33FC7485E1F856266 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F17A4E5F46EC349764F73446 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -172,6 +178,7 @@
 			children = (
 				45E133471BE52A9700A18C44 /* Login Screen */,
 				45E133481BE52AC500A18C44 /* Profile Screen */,
+				C7E92E6B1BE529A50097412F /* Chat Section */,
 				C7E92E381BE51F580097412F /* AppDelegate.h */,
 				848D73C41BE52E4D009325C5 /* SalarySection */,
 				C7E92E391BE51F580097412F /* AppDelegate.m */,
@@ -209,6 +216,17 @@
 				C7E92E5F1BE51F590097412F /* Info.plist */,
 			);
 			path = WITUITests;
+			sourceTree = "<group>";
+		};
+		C7E92E6B1BE529A50097412F /* Chat Section */ = {
+			isa = PBXGroup;
+			children = (
+				C7E92E6C1BE529E70097412F /* ChatPost.h */,
+				C7E92E6D1BE529E70097412F /* ChatPost.m */,
+				C7E92E6F1BE52AD00097412F /* ChatResponse.h */,
+				C7E92E701BE52AD00097412F /* ChatResponse.m */,
+			);
+			name = "Chat Section";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -386,6 +404,10 @@
 				C7E92E3D1BE51F580097412F /* LoginScreenVC.m in Sources */,
 				C7E92E3A1BE51F580097412F /* AppDelegate.m in Sources */,
 				848D73CA1BE52E98009325C5 /* AddNewSalaryStory.m in Sources */,
+				C7E92E3D1BE51F580097412F /* ViewController.m in Sources */,
+				C7E92E711BE52AD00097412F /* ChatResponse.m in Sources */,
+				C7E92E3A1BE51F580097412F /* AppDelegate.m in Sources */,
+				C7E92E6E1BE529E70097412F /* ChatPost.m in Sources */,
 				C7E92E371BE51F580097412F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
