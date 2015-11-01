@@ -78,7 +78,7 @@
 
 - (void)setSelectedIndex:(NSUInteger)selectedIndex {
     [super setSelectedIndex:selectedIndex];
-
+    
     self.tabBarView.selectedTabBarItemIndex = selectedIndex;
     [self.tabBarView setNeedsLayout];
 }
@@ -96,7 +96,7 @@
 
 - (void)setupTabBarView {
     self.tabBarView = [[YALFoldingTabBar alloc] initWithFrame:CGRectZero state:self.state];
-        
+    
     self.tabBarView.dataSource = self;
     self.tabBarView.delegate = self;
     

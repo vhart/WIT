@@ -11,8 +11,8 @@
 		45E1334E1BE53EBF00A18C44 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E1334D1BE53EBF00A18C44 /* TabBarViewController.m */; };
 		848D73CC1BE53BE8009325C5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E391BE51F580097412F /* AppDelegate.m */; };
 		848D73CF1BE53E6D009325C5 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D73CE1BE53E6D009325C5 /* TabBarController.m */; settings = {ASSET_TAGS = (); }; };
+		848D73DD1BE58886009325C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848D73DB1BE58886009325C5 /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
 		C7E92E371BE51F580097412F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E361BE51F580097412F /* main.m */; };
-		C7E92E401BE51F580097412F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7E92E3E1BE51F580097412F /* Main.storyboard */; };
 		C7E92E431BE51F580097412F /* WIT.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E411BE51F580097412F /* WIT.xcdatamodeld */; };
 		C7E92E451BE51F580097412F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7E92E441BE51F580097412F /* Assets.xcassets */; };
 		C7E92E481BE51F580097412F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7E92E461BE51F580097412F /* LaunchScreen.storyboard */; };
@@ -44,13 +44,13 @@
 		78D156BD9D23EF12B29F93FB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		848D73CD1BE53E6C009325C5 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
 		848D73CE1BE53E6D009325C5 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
+		848D73DC1BE58886009325C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C7E92E321BE51F580097412F /* WIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WIT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7E92E361BE51F580097412F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C7E92E381BE51F580097412F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C7E92E391BE51F580097412F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C7E92E3B1BE51F580097412F /* LoginScreenVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginScreenVC.h; sourceTree = "<group>"; };
 		C7E92E3C1BE51F580097412F /* LoginScreenVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginScreenVC.m; sourceTree = "<group>"; };
-		C7E92E3F1BE51F580097412F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C7E92E421BE51F580097412F /* WIT.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WIT.xcdatamodel; sourceTree = "<group>"; };
 		C7E92E441BE51F580097412F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7E92E471BE51F580097412F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -149,8 +149,8 @@
 				C7E92E781BE57B970097412F /* Parse Media */,
 				C7E92E381BE51F580097412F /* AppDelegate.h */,
 				C7E92E391BE51F580097412F /* AppDelegate.m */,
+				848D73DB1BE58886009325C5 /* Main.storyboard */,
 				45E133471BE52A9700A18C44 /* Login Screen */,
-				C7E92E3E1BE51F580097412F /* Main.storyboard */,
 				848D73CD1BE53E6C009325C5 /* TabBarController.h */,
 				848D73CE1BE53E6D009325C5 /* TabBarController.m */,
 				C7E92E441BE51F580097412F /* Assets.xcassets */,
@@ -305,9 +305,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848D73DD1BE58886009325C5 /* Main.storyboard in Resources */,
 				C7E92E481BE51F580097412F /* LaunchScreen.storyboard in Resources */,
 				C7E92E451BE51F580097412F /* Assets.xcassets in Resources */,
-				C7E92E401BE51F580097412F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,10 +406,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C7E92E3E1BE51F580097412F /* Main.storyboard */ = {
+		848D73DB1BE58886009325C5 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C7E92E3F1BE51F580097412F /* Base */,
+				848D73DC1BE58886009325C5 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

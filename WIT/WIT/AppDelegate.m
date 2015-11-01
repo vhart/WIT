@@ -9,6 +9,11 @@
 #import "AppDelegate.h"
 #import "Media.h"
 #import <Parse/Parse.h>
+#import "YALTabBarItem.h"
+#import "YALFoldingTabBarController.h"
+#import "YALAnimatingTabBarConstants.h"
+
+
 
 @interface AppDelegate ()
 
@@ -24,9 +29,73 @@
     
     
     [Media registerSubclass];
+    [self setupYALTabBarController];
     
     return YES;
 }
+
+
+
+
+
+- (void)setupYALTabBarController {
+    
+    
+    
+    YALFoldingTabBarController *tabBarController = (YALFoldingTabBarController *) self.window.rootViewController;
+    
+    
+    
+    //prepare leftBarItems
+    
+    
+    YALTabBarItem *item1 = [[YALTabBarItem alloc] initWithItemImage:[UIImage imageNamed:@"newsFeed"]
+                                                      leftItemImage:[UIImage imageNamed:@"newsFeed"]
+                                                     rightItemImage:nil];
+    
+    
+    
+    YALTabBarItem *item2 = [[YALTabBarItem alloc] initWithItemImage:[UIImage imageNamed:@"penIcon"]
+                                                      leftItemImage:[UIImage imageNamed:@"penIcon"]
+                                                     rightItemImage:nil];
+    
+    tabBarController.leftBarItems = @[item1, item2];
+    
+    //prepare rightBarItems
+    YALTabBarItem *item3 = [[YALTabBarItem alloc] initWithItemImage:[UIImage imageNamed:@"audioIcon"]
+                                                      leftItemImage:[UIImage imageNamed:nil]
+                                                     rightItemImage:[UIImage imageNamed:@"audioIcon"]];
+    YALTabBarItem *item4 = [[YALTabBarItem alloc] initWithItemImage:[UIImage imageNamed:@"videoIcon"]
+                                                      leftItemImage:[UIImage imageNamed:nil]
+                                                     rightItemImage:[UIImage imageNamed:@"videoIcon"]];
+    
+    
+    
+    tabBarController.rightBarItems = @[item3, item4];
+    
+    tabBarController.centerButtonImage = [UIImage imageNamed:@"plus_icon"];
+    
+    tabBarController.selectedIndex = 0;
+    
+    //customize tabBarView
+    //#fd6080
+    tabBarController.tabBarView.extraTabBarItemHeight = YALExtraTabBarItemsDefaultHeight;
+    tabBarController.tabBarView.offsetForExtraTabBarItems = YALForExtraTabBarItemsDefaultOffset;
+    tabBarController.tabBarView.backgroundColor = [UIColor clearColor];
+    tabBarController.tabBarView.tabBarColor = [UIColor colorWithRed:0.992 green:0.376 blue:0.502 alpha:1];
+    
+    tabBarController.tabBarViewHeight = YALTabBarViewDefaultHeight;
+    tabBarController.tabBarView.tabBarViewEdgeInsets = YALTabBarViewHDefaultEdgeInsets;
+    tabBarController.tabBarView.tabBarItemsEdgeInsets = YALTabBarViewItemsDefaultEdgeInsets;
+    
+}
+
+
+
+
+
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -58,10 +127,19 @@
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
+
+
+
+
+
+
+
+
 - (NSURL *)applicationDocumentsDirectory {
     // The directory the application uses to store the Core Data store file. This code uses a directory named "nyc.c4q.vhart.WIT" in the application's documents directory.
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
+
 
 - (NSManagedObjectModel *)managedObjectModel {
     // The managed object model for the application. It is a fatal error for the application not to be able to find and load its model.
