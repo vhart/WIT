@@ -25,6 +25,8 @@
 		C765CF541BE5B92B0048A36B /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = C765CF531BE5B92B0048A36B /* Post.m */; settings = {ASSET_TAGS = (); }; };
 		C765CF5A1BE5C26B0048A36B /* VideoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C765CF591BE5C26B0048A36B /* VideoDetailViewController.m */; settings = {ASSET_TAGS = (); }; };
 		C765CF5D1BE6541B0048A36B /* FeedData.m in Sources */ = {isa = PBXBuildFile; fileRef = C765CF5C1BE6541B0048A36B /* FeedData.m */; settings = {ASSET_TAGS = (); }; };
+		C765CF601BE677C00048A36B /* KeepCalm-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C765CF5F1BE677C00048A36B /* KeepCalm-Medium.ttf */; settings = {ASSET_TAGS = (); }; };
+		C765CF621BE677C90048A36B /* Porter Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C765CF611BE677C90048A36B /* Porter Bold.ttf */; settings = {ASSET_TAGS = (); }; };
 		C7E92E371BE51F580097412F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E361BE51F580097412F /* main.m */; };
 		C7E92E431BE51F580097412F /* WIT.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E411BE51F580097412F /* WIT.xcdatamodeld */; };
 		C7E92E451BE51F580097412F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7E92E441BE51F580097412F /* Assets.xcassets */; };
@@ -80,6 +82,8 @@
 		C765CF591BE5C26B0048A36B /* VideoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoDetailViewController.m; sourceTree = "<group>"; };
 		C765CF5B1BE6541B0048A36B /* FeedData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedData.h; sourceTree = "<group>"; };
 		C765CF5C1BE6541B0048A36B /* FeedData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedData.m; sourceTree = "<group>"; };
+		C765CF5F1BE677C00048A36B /* KeepCalm-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KeepCalm-Medium.ttf"; sourceTree = "<group>"; };
+		C765CF611BE677C90048A36B /* Porter Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Porter Bold.ttf"; sourceTree = "<group>"; };
 		C7E92E321BE51F580097412F /* WIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WIT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7E92E361BE51F580097412F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C7E92E381BE51F580097412F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -184,6 +188,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C765CF5E1BE677860048A36B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C765CF5F1BE677C00048A36B /* KeepCalm-Medium.ttf */,
+				C765CF611BE677C90048A36B /* Porter Bold.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
 		C7E92E291BE51F570097412F = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +222,7 @@
 		C7E92E341BE51F580097412F /* WIT */ = {
 			isa = PBXGroup;
 			children = (
+				C765CF5E1BE677860048A36B /* Fonts */,
 				45023A501BE59D0C00A776D8 /* TextPostMake */,
 				C7E92E7C1BE58AC20097412F /* VideoPostMake */,
 				C7E92E781BE57B970097412F /* Parse Media */,
@@ -395,6 +409,8 @@
 			files = (
 				848D73DD1BE58886009325C5 /* Main.storyboard in Resources */,
 				848D742E1BE6554E009325C5 /* FeedsCell.xib in Resources */,
+				C765CF621BE677C90048A36B /* Porter Bold.ttf in Resources */,
+				C765CF601BE677C00048A36B /* KeepCalm-Medium.ttf in Resources */,
 				C7E92E481BE51F580097412F /* LaunchScreen.storyboard in Resources */,
 				C7E92E451BE51F580097412F /* Assets.xcassets in Resources */,
 			);
