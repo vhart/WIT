@@ -5,10 +5,52 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Folding Tab Bar Controller-->
+        <!--View Controller-->
+        <scene sceneID="la0-p3-vWS">
+            <objects>
+                <viewController id="Icy-To-dHB" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KuG-cJ-NtA"/>
+                        <viewControllerLayoutGuide type="bottom" id="tvk-Nc-CuO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jLH-hM-abe">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eeo-ZK-whr">
+                                <rect key="frame" x="78" y="184" width="30" height="30"/>
+                                <state key="normal" title="Text"/>
+                                <connections>
+                                    <segue destination="Mll-XT-cDz" kind="presentation" modalTransitionStyle="crossDissolve" id="tOP-8z-OX2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="snS-Y6-fw6">
+                                <rect key="frame" x="216" y="184" width="40" height="30"/>
+                                <state key="normal" title="Audio"/>
+                                <connections>
+                                    <segue destination="3Pb-gJ-V6p" kind="presentation" modalTransitionStyle="crossDissolve" id="pZ2-zV-7LG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15K-oa-G5C">
+                                <rect key="frame" x="323" y="184" width="40" height="30"/>
+                                <state key="normal" title="Video"/>
+                                <connections>
+                                    <segue destination="hIW-iO-pCC" kind="presentation" modalTransitionStyle="crossDissolve" id="auL-oH-dvs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="shareIcon" id="Zg3-FG-usI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EVg-2w-kXp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1180" y="-17"/>
+        </scene>
+        <!--Tab Bar Controller-->
         <scene sceneID="e9t-9N-RtR">
             <objects>
-                <tabBarController id="vOA-Ld-ERE" customClass="YALFoldingTabBarController" sceneMemberID="viewController">
+                <tabBarController id="vOA-Ld-ERE" sceneMemberID="viewController">
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="zbJ-cj-EQ2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -17,17 +59,15 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="S01-Yo-pIJ" kind="relationship" relationship="viewControllers" id="IHC-oo-cRg"/>
-                        <segue destination="Mll-XT-cDz" kind="relationship" relationship="viewControllers" id="Rvw-1U-yFY"/>
-                        <segue destination="3Pb-gJ-V6p" kind="relationship" relationship="viewControllers" id="MFk-5q-zNB"/>
-                        <segue destination="hIW-iO-pCC" kind="relationship" relationship="viewControllers" id="fMe-8x-Ub8"/>
+                        <segue destination="S01-Yo-pIJ" kind="relationship" relationship="viewControllers" id="cw6-UF-mGy"/>
+                        <segue destination="Icy-To-dHB" kind="relationship" relationship="viewControllers" id="tW4-ns-hvj"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MzO-IL-mag" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1032" y="243"/>
+            <point key="canvasLocation" x="490" y="-25"/>
         </scene>
-        <!--Item-->
+        <!--Text Post Creation View Controller-->
         <scene sceneID="Q3i-J1-fql">
             <objects>
                 <viewController id="Mll-XT-cDz" customClass="TextPostCreationViewController" sceneMemberID="viewController">
@@ -145,7 +185,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Ghh-fV-5eo"/>
+                    <tabBarItem key="tabBarItem" title="" image="penIcon" id="Ghh-fV-5eo"/>
                     <connections>
                         <outlet property="inputTextView" destination="IHO-al-gSI" id="4tu-88-ZY9"/>
                         <outlet property="saveButtonTapped" destination="GF8-m6-dEf" id="3Y4-in-NBN"/>
@@ -158,7 +198,7 @@
             </objects>
             <point key="canvasLocation" x="1858" y="-139"/>
         </scene>
-        <!--Item-->
+        <!--View Controller-->
         <scene sceneID="Scr-cH-yiu">
             <objects>
                 <viewController id="3Pb-gJ-V6p" sceneMemberID="viewController">
@@ -181,7 +221,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Izx-oA-hdX"/>
+                    <tabBarItem key="tabBarItem" title="" image="audioIcon" id="Izx-oA-hdX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IIt-1y-cHF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -243,7 +283,7 @@
             </objects>
             <point key="canvasLocation" x="2068" y="1993"/>
         </scene>
-        <!--Item-->
+        <!--View Controller-->
         <scene sceneID="YBT-Mh-XIt">
             <objects>
                 <viewController id="hIW-iO-pCC" sceneMemberID="viewController">
@@ -266,11 +306,11 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="o5b-Yv-Hmp"/>
+                    <tabBarItem key="tabBarItem" title="" image="videoIcon" id="o5b-Yv-Hmp"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lc6-VE-4wT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1032" y="1184"/>
+            <point key="canvasLocation" x="1562" y="1344"/>
         </scene>
         <!--Feed-->
         <scene sceneID="9ta-G0-gcT">
@@ -290,11 +330,11 @@
             </objects>
             <point key="canvasLocation" x="1150" y="1993"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="ptJ-C7-wX2">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="S01-Yo-pIJ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="8NR-tt-dG0"/>
+                    <tabBarItem key="tabBarItem" title="" image="newsFeed" id="8NR-tt-dG0"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="y6X-SQ-URu">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -308,7 +348,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dSP-ge-j0Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1896" y="-925"/>
+            <point key="canvasLocation" x="816" y="-1005"/>
         </scene>
         <!--Feeds View Controller-->
         <scene sceneID="GOP-gR-L85">
@@ -381,11 +421,19 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eQ3-jE-62g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2507" y="-799"/>
+            <point key="canvasLocation" x="1474" y="-949"/>
         </scene>
     </scenes>
     <resources>
+<<<<<<< HEAD
+        <image name="audioIcon" width="35" height="35"/>
+        <image name="newsFeed" width="29" height="26"/>
+        <image name="penIcon" width="32" height="32"/>
+        <image name="shareIcon" width="512" height="512"/>
+        <image name="videoIcon" width="29" height="29"/>
+=======
         <image name="text" width="595" height="77"/>
         <image name="womanIcon" width="830" height="731"/>
+>>>>>>> 868065e75c6dfb948ba38fcb6f793f3e918cb5fb
     </resources>
 </document>

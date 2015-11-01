@@ -28,6 +28,11 @@ UITableViewDelegate
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     
+    
+    
+    
+    
+    
 //    self.imageIcon.frame = CGRectMake(0.0f, 0.0f, 1024.0f, 768.0f);
 //    [UIView beginAnimations:@"Zoom" context:NULL];
 //    [UIView setAnimationDuration:2.0];
@@ -37,20 +42,27 @@ UITableViewDelegate
  
     
     
-    FeedData* sharedSingleton = [FeedData sharedModel];
-    [sharedSingleton feedData];
-    self.displayingFeedData = [sharedSingleton feedData];
     
     
-    
-    NSLog(@"fffff %@", [sharedSingleton feedData]);
-    NSLog(@"displayingFeedData %@", [self.displayingFeedData objectAtIndex:0] );
-
     
     
 //     tell the table view to auto adjust the height of each cell
 //    self.tableView.rowHeight = UITableViewAutomaticDimension;
 //    self.tableView.estimatedRowHeight = 19.0;
+    
+    
+    
+    FeedData* sharedSingleton = [FeedData sharedModel];
+    self.displayingFeedData = [sharedSingleton feedData];
+    
+    NSLog(@"displayingFeedData %@", self.displayingFeedData );
+    
+
+    
+    
+    
+    
+    
     
     // grab the nib from the main bundle
     UINib *nib = [UINib nibWithNibName:@"FeedsCell" bundle:nil];
@@ -69,11 +81,12 @@ UITableViewDelegate
 
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    NSLog(@" count %lu", (unsigned long)[self.displayingFeedData count] );
+    return [self.displayingFeedData count] ;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
+    return 1;
 }
 
 -(UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -81,20 +94,41 @@ UITableViewDelegate
     FeedsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FeedsCellIdentifier" forIndexPath:indexPath];
     
     
-    cell.titleCell.text = @"title";
-    NSLog(@"cell.titleCell.text %@",cell.titleCell.text);
+    Post *postObject = [self.displayingFeedData objectAtIndex:indexPath.section];
     
-    cell.usernameCell.text = @"nameeeee";
-    cell.tagsCell.text = @"tags";
     
-//    @property (weak, nonatomic) IBOutlet UILabel *usernameCell;
-//    @property (weak, nonatomic) IBOutlet UILabel *titleCell;
-//    @property (weak, nonatomic) IBOutlet UILabel *tagsCell;
-//    @property (weak, nonatomic) IBOutlet UIButton *hi5Button;
-//    @property (weak, nonatomic) IBOutlet UIImageView *audioVideoThumbnail;
-//    @property (weak, nonatomic) IBOutlet UITextView *textPostCell;
-//    @property (weak, nonatomic) IBOutlet UIImageView *videoPlayingIcon;
-//    cell.detailTextLabel.text = currentResult.title;
+    
+    
+    cell.usernameCell.text = postObject.username;
+    cell.titleCell.text = postObject.title;
+    cell.tagsCell.text = [NSString stringWithFormat:@"%@ ",[postObject.tags objectAtIndex:0]];
+    
+    //if video
+    if ([postObject.mediaType isEqualToString:@"video"]) {
+        NSLog(@"That's a video");
+        
+    cell.audioVideoThumbnail.image = postObject.videoThumbnail;
+    cell.videoPlayingIcon.image = [UIImage imageNamed:@"videoIcon"];
+    cell.textPostCell.hidden = YES;
+        
+    }
+    if ([postObject.mediaType isEqualToString:@"audio"]) {
+        NSLog(@"That's an audio");
+        
+        cell.audioVideoThumbnail.image = [UIImage imageNamed:@"blackBackground"];
+        cell.videoPlayingIcon.image = [UIImage imageNamed:@"videoIcon"];
+        cell.textPostCell.hidden = YES;
+    }
+    
+    if ([postObject.mediaType isEqualToString:@"text"]) {
+        NSLog(@"That's a text");
+        cell.textPostCell.text = postObject.textPost;
+        cell.audioVideoThumbnail.hidden = YES;
+        cell.videoPlayingIcon.hidden = YES;
+        
+    }
+    
+    
     
     return cell;
 }
@@ -107,9 +141,13 @@ UITableViewDelegate
 }
 
 
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 50.0;
-}
+//- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+//    return 50.0;
+//}
+
+
+
+
 
 /*
 #pragma mark - Navigation
