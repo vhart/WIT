@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class Post;
+
 @interface TextPostCreationViewController : UIViewController
 
+//@property (nonatomic) NSMutableArray <Post *> *entries;
+@property (nonatomic) Post *post;
 @end
