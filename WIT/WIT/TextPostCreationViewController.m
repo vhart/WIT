@@ -43,7 +43,7 @@
      self.inputTextView.text = self.post.textPost;
     self.titleTextField.text = self.post.title;
     
-   // self.tagTextField.text = self.post.tags;
+   self.tagTextField.text = [self.post.tags objectAtIndex:1];
     
     
 }
