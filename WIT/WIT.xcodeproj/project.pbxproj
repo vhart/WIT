@@ -7,21 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1536214D1BE5B73E00ED3D70 /* AudioPostCreationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1536214C1BE5B73E00ED3D70 /* AudioPostCreationViewController.m */; };
 		227B5950C44DAAB03FDED46F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78D156BD9D23EF12B29F93FB /* libPods.a */; };
 		45E1334E1BE53EBF00A18C44 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E1334D1BE53EBF00A18C44 /* TabBarViewController.m */; };
 		848D73CC1BE53BE8009325C5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E391BE51F580097412F /* AppDelegate.m */; };
-		848D73CF1BE53E6D009325C5 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D73CE1BE53E6D009325C5 /* TabBarController.m */; settings = {ASSET_TAGS = (); }; };
-		848D73DD1BE58886009325C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848D73DB1BE58886009325C5 /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
-		848D73E01BE5A0FF009325C5 /* FeedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D73DF1BE5A0FF009325C5 /* FeedTableViewController.m */; settings = {ASSET_TAGS = (); }; };
-		848D73E41BE5A430009325C5 /* AllFeeds.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D73E31BE5A430009325C5 /* AllFeeds.m */; settings = {ASSET_TAGS = (); }; };
+		848D73CF1BE53E6D009325C5 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D73CE1BE53E6D009325C5 /* TabBarController.m */; };
+		848D73DD1BE58886009325C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848D73DB1BE58886009325C5 /* Main.storyboard */; };
+		848D73E01BE5A0FF009325C5 /* FeedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D73DF1BE5A0FF009325C5 /* FeedTableViewController.m */; };
+		848D73E41BE5A430009325C5 /* AllFeeds.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D73E31BE5A430009325C5 /* AllFeeds.m */; };
 		C7E92E371BE51F580097412F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E361BE51F580097412F /* main.m */; };
 		C7E92E431BE51F580097412F /* WIT.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E411BE51F580097412F /* WIT.xcdatamodeld */; };
 		C7E92E451BE51F580097412F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7E92E441BE51F580097412F /* Assets.xcassets */; };
 		C7E92E481BE51F580097412F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7E92E461BE51F580097412F /* LaunchScreen.storyboard */; };
 		C7E92E531BE51F580097412F /* WITTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E521BE51F580097412F /* WITTests.m */; };
 		C7E92E5E1BE51F590097412F /* WITUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E5D1BE51F590097412F /* WITUITests.m */; };
-		C7E92E7B1BE57D200097412F /* Media.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E7A1BE57D200097412F /* Media.m */; settings = {ASSET_TAGS = (); }; };
-		C7E92E7F1BE58DE40097412F /* VideoPostCreationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E7E1BE58DE40097412F /* VideoPostCreationViewController.m */; settings = {ASSET_TAGS = (); }; };
+		C7E92E7B1BE57D200097412F /* Media.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E7A1BE57D200097412F /* Media.m */; };
+		C7E92E7F1BE58DE40097412F /* VideoPostCreationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E7E1BE58DE40097412F /* VideoPostCreationViewController.m */; };
 		C7E92E811BE598790097412F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7E92E801BE598780097412F /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1536214B1BE5B73E00ED3D70 /* AudioPostCreationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPostCreationViewController.h; sourceTree = "<group>"; };
+		1536214C1BE5B73E00ED3D70 /* AudioPostCreationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPostCreationViewController.m; sourceTree = "<group>"; };
 		45E1334C1BE53EBF00A18C44 /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
 		45E1334D1BE53EBF00A18C44 /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
 		78D156BD9D23EF12B29F93FB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -228,6 +231,8 @@
 			children = (
 				C7E92E7D1BE58DE40097412F /* VideoPostCreationViewController.h */,
 				C7E92E7E1BE58DE40097412F /* VideoPostCreationViewController.m */,
+				1536214B1BE5B73E00ED3D70 /* AudioPostCreationViewController.h */,
+				1536214C1BE5B73E00ED3D70 /* AudioPostCreationViewController.m */,
 			);
 			name = VideoPostMake;
 			sourceTree = "<group>";
@@ -404,6 +409,7 @@
 				C7E92E7B1BE57D200097412F /* Media.m in Sources */,
 				C7E92E7F1BE58DE40097412F /* VideoPostCreationViewController.m in Sources */,
 				45E1334E1BE53EBF00A18C44 /* TabBarViewController.m in Sources */,
+				1536214D1BE5B73E00ED3D70 /* AudioPostCreationViewController.m in Sources */,
 				848D73CC1BE53BE8009325C5 /* AppDelegate.m in Sources */,
 				C7E92E431BE51F580097412F /* WIT.xcdatamodeld in Sources */,
 				848D73CF1BE53E6D009325C5 /* TabBarController.m in Sources */,
