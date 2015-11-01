@@ -22,14 +22,14 @@
 
 @end
 
-
-
-
-@property (nonatomic) NSString *mediaType;
-@property (nonatomic) NSURL *videoURL;
-@property (nonatomic) UIImage *videoThumbnail;
-@property (nonatomic) NSURL *audioURL;
-@property (nonatomic) NSString *textPost;
-@property (nonatomic) NSString *title;
-@property (nonatomic) NSMutableArray *tags;
-@property (nonatomic) NSString *username;
+//
+//
+//
+//@property (nonatomic) NSString *mediaType;
+//@property (nonatomic) NSURL *videoURL;
+//@property (nonatomic) UIImage *videoThumbnail;
+//@property (nonatomic) NSURL *audioURL;
+//@property (nonatomic) NSString *textPost;
+//@property (nonatomic) NSString *title;
+//@property (nonatomic) NSMutableArray *tags;
+//@property (nonatomic) NSString *username;
