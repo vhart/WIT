@@ -7,24 +7,13 @@
 //
 
 #import "VideoPostCreationViewController.h"
-<<<<<<< HEAD
 #import <MobileCoreServices/MobileCoreServices.h>
 #import "NSURL+ImageGenerator.h"
 
 @interface VideoPostCreationViewController () <UIImagePickerControllerDelegate,UINavigationControllerDelegate, UITextFieldDelegate>
 @property (nonatomic, weak) UITextField *titleLabel;
 @property (nonatomic, weak) UITextField *tagsLabel;
-=======
-#import <AVFoundation/AVFoundation.h>
 
-@interface VideoPostCreationViewController () <
-UIImagePickerControllerDelegate,
-UINavigationControllerDelegate,
-AVAudioRecorderDelegate,
-AVAudioPlayerDelegate
->
-
->>>>>>> 6cc31c7eeb6b167bdd28199d3e100106457b1965
 @property (nonatomic) UIImagePickerController *imagePicker;
 @property (nonatomic) NSURL *videoURL;
 @property (nonatomic) Post *post;
@@ -44,19 +33,11 @@ AVAudioPlayerDelegate
     [super viewDidLoad];
     
     self.videoEntry = [Media new];
-<<<<<<< HEAD
     self.post = [Post new];
     self.post.tags = [NSMutableArray new];
     // Do any additional setup after loading the view.
-=======
  
-    self.playButton.enabled = NO;
-    self.stopButton.enabled = NO;
-    
-    [self audioActions];
-    
->>>>>>> 6cc31c7eeb6b167bdd28199d3e100106457b1965
-}
+ }
 
 
 #pragma mark - Functions
@@ -236,98 +217,10 @@ AVAudioPlayerDelegate
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-<<<<<<< HEAD
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
     [self.view endEditing:YES];
     return YES;
 }
-=======
 
 
-
-
-
-
-- (IBAction)recordAudio:(UIButton *)sender {
-    if (!_audioRecorder.recording)
-    {
-        _playButton.enabled = NO;
-        _stopButton.enabled = YES;
-        [_audioRecorder record];
-        
-        [self imageSetup];
-        //        self.recordButton.imageView.image = [UIImage imageNamed:@"micpurple"];
-        
-    }
-}
-
-- (IBAction)playAudio:(UIButton *)sender {
-    if (!_audioRecorder.recording)
-    {
-        _stopButton.enabled = YES;
-        _recordButton.enabled = NO;
-        
-        NSError *error;
-        
-        _audioPlayer = [[AVAudioPlayer alloc]
-                        initWithContentsOfURL:_audioRecorder.url
-                        error:&error];
-        
-        _audioPlayer.delegate = self;
-        
-        if (error)
-            NSLog(@"Error: %@",
-                  [error localizedDescription]);
-        else
-            [_audioPlayer play];
-    }
-}
-
-- (IBAction)stopAudio:(UIButton *)sender {
-    _stopButton.enabled = NO;
-    _playButton.enabled = YES;
-    _recordButton.enabled = YES;
-    
-    if (_audioRecorder.recording)
-    {
-        [_audioRecorder stop];
-    } else if (_audioPlayer.playing) {
-        [_audioPlayer stop];
-    }
-}
-
-
-#pragma mark - Audio Delegates
-
--(void)audioPlayerDidFinishPlaying:
-(AVAudioPlayer *)player successfully:(BOOL)flag
-{
-    _recordButton.enabled = YES;
-    _stopButton.enabled = NO;
-}
-
--(void)audioPlayerDecodeErrorDidOccur:
-(AVAudioPlayer *)player
-                                error:(NSError *)error
-{
-    NSLog(@"Decode Error occurred");
-}
-
--(void)audioRecorderDidFinishRecording:
-(AVAudioRecorder *)recorder
-                          successfully:(BOOL)flag
-{
-}
-
--(void)audioRecorderEncodeErrorDidOccur:
-(AVAudioRecorder *)recorder
-                                  error:(NSError *)error
-{
-    NSLog(@"Encode Error occurred");
-}
-
-
-
-
->>>>>>> 6cc31c7eeb6b167bdd28199d3e100106457b1965
 @end

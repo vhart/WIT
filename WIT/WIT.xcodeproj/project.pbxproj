@@ -11,16 +11,16 @@
 		45023A531BE59D9500A776D8 /* TextPostCreationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45023A521BE59D9500A776D8 /* TextPostCreationViewController.m */; };
 		45E1334E1BE53EBF00A18C44 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E1334D1BE53EBF00A18C44 /* TabBarViewController.m */; };
 		848D73CC1BE53BE8009325C5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E391BE51F580097412F /* AppDelegate.m */; };
-		848D73CF1BE53E6D009325C5 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D73CE1BE53E6D009325C5 /* TabBarController.m */; settings = {ASSET_TAGS = (); }; };
-		848D73DD1BE58886009325C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848D73DB1BE58886009325C5 /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
-		C765CF4D1BE59FEE0048A36B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C765CF4C1BE59FEE0048A36B /* MobileCoreServices.framework */; };
-		C765CF511BE5A48B0048A36B /* NSURL+ImageGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = C765CF501BE5A48B0048A36B /* NSURL+ImageGenerator.m */; settings = {ASSET_TAGS = (); }; };
-		C765CF541BE5B92B0048A36B /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = C765CF531BE5B92B0048A36B /* Post.m */; settings = {ASSET_TAGS = (); }; };
-		C765CF5A1BE5C26B0048A36B /* VideoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C765CF591BE5C26B0048A36B /* VideoDetailViewController.m */; settings = {ASSET_TAGS = (); }; };
 		848D73CF1BE53E6D009325C5 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D73CE1BE53E6D009325C5 /* TabBarController.m */; };
 		848D73DD1BE58886009325C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848D73DB1BE58886009325C5 /* Main.storyboard */; };
 		848D73E41BE5A430009325C5 /* AllFeeds.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D73E31BE5A430009325C5 /* AllFeeds.m */; };
 		848D742C1BE5C7D0009325C5 /* FeedsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D742B1BE5C7D0009325C5 /* FeedsViewController.m */; settings = {ASSET_TAGS = (); }; };
+		848D742E1BE6554E009325C5 /* FeedsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848D742D1BE6554E009325C5 /* FeedsCell.xib */; settings = {ASSET_TAGS = (); }; };
+		848D74311BE655A3009325C5 /* FeedsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D74301BE655A3009325C5 /* FeedsTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		C765CF4D1BE59FEE0048A36B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C765CF4C1BE59FEE0048A36B /* MobileCoreServices.framework */; };
+		C765CF511BE5A48B0048A36B /* NSURL+ImageGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = C765CF501BE5A48B0048A36B /* NSURL+ImageGenerator.m */; settings = {ASSET_TAGS = (); }; };
+		C765CF541BE5B92B0048A36B /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = C765CF531BE5B92B0048A36B /* Post.m */; settings = {ASSET_TAGS = (); }; };
+		C765CF5A1BE5C26B0048A36B /* VideoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C765CF591BE5C26B0048A36B /* VideoDetailViewController.m */; settings = {ASSET_TAGS = (); }; };
 		C7E92E371BE51F580097412F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E361BE51F580097412F /* main.m */; };
 		C7E92E431BE51F580097412F /* WIT.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E411BE51F580097412F /* WIT.xcdatamodeld */; };
 		C7E92E451BE51F580097412F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7E92E441BE51F580097412F /* Assets.xcassets */; };
@@ -58,6 +58,13 @@
 		848D73CD1BE53E6C009325C5 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
 		848D73CE1BE53E6D009325C5 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
 		848D73DC1BE58886009325C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		848D73E21BE5A430009325C5 /* AllFeeds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllFeeds.h; sourceTree = "<group>"; };
+		848D73E31BE5A430009325C5 /* AllFeeds.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllFeeds.m; sourceTree = "<group>"; };
+		848D742A1BE5C7D0009325C5 /* FeedsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedsViewController.h; sourceTree = "<group>"; };
+		848D742B1BE5C7D0009325C5 /* FeedsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedsViewController.m; sourceTree = "<group>"; };
+		848D742D1BE6554E009325C5 /* FeedsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedsCell.xib; sourceTree = "<group>"; };
+		848D742F1BE655A3009325C5 /* FeedsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedsTableViewCell.h; sourceTree = "<group>"; };
+		848D74301BE655A3009325C5 /* FeedsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedsTableViewCell.m; sourceTree = "<group>"; };
 		C765CF4C1BE59FEE0048A36B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		C765CF4F1BE5A48B0048A36B /* NSURL+ImageGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+ImageGenerator.h"; sourceTree = "<group>"; };
 		C765CF501BE5A48B0048A36B /* NSURL+ImageGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+ImageGenerator.m"; sourceTree = "<group>"; };
@@ -65,10 +72,6 @@
 		C765CF531BE5B92B0048A36B /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
 		C765CF581BE5C26B0048A36B /* VideoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoDetailViewController.h; sourceTree = "<group>"; };
 		C765CF591BE5C26B0048A36B /* VideoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoDetailViewController.m; sourceTree = "<group>"; };
-		848D73E21BE5A430009325C5 /* AllFeeds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllFeeds.h; sourceTree = "<group>"; };
-		848D73E31BE5A430009325C5 /* AllFeeds.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllFeeds.m; sourceTree = "<group>"; };
-		848D742A1BE5C7D0009325C5 /* FeedsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedsViewController.h; sourceTree = "<group>"; };
-		848D742B1BE5C7D0009325C5 /* FeedsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedsViewController.m; sourceTree = "<group>"; };
 		C7E92E321BE51F580097412F /* WIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WIT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7E92E361BE51F580097412F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C7E92E381BE51F580097412F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -147,6 +150,9 @@
 			children = (
 				848D742A1BE5C7D0009325C5 /* FeedsViewController.h */,
 				848D742B1BE5C7D0009325C5 /* FeedsViewController.m */,
+				848D742F1BE655A3009325C5 /* FeedsTableViewCell.h */,
+				848D74301BE655A3009325C5 /* FeedsTableViewCell.m */,
+				848D742D1BE6554E009325C5 /* FeedsCell.xib */,
 			);
 			name = Feeds;
 			sourceTree = "<group>";
@@ -376,6 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				848D73DD1BE58886009325C5 /* Main.storyboard in Resources */,
+				848D742E1BE6554E009325C5 /* FeedsCell.xib in Resources */,
 				C7E92E481BE51F580097412F /* LaunchScreen.storyboard in Resources */,
 				C7E92E451BE51F580097412F /* Assets.xcassets in Resources */,
 			);
@@ -459,6 +466,7 @@
 				45E1334E1BE53EBF00A18C44 /* TabBarViewController.m in Sources */,
 				C765CF541BE5B92B0048A36B /* Post.m in Sources */,
 				848D73CC1BE53BE8009325C5 /* AppDelegate.m in Sources */,
+				848D74311BE655A3009325C5 /* FeedsTableViewCell.m in Sources */,
 				45023A531BE59D9500A776D8 /* TextPostCreationViewController.m in Sources */,
 				C7E92E431BE51F580097412F /* WIT.xcdatamodeld in Sources */,
 				848D73CF1BE53E6D009325C5 /* TabBarController.m in Sources */,

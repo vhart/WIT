@@ -13,7 +13,7 @@
 
 @interface Media : PFObject <PFSubclassing>
 
-
+@property (nonatomic) NSString *username;
 @property (nonatomic) NSString *textPost;
 @property (nonatomic) NSString *fileType;
 @property (nonatomic) NSString *fileExtension;
