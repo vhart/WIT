@@ -14,6 +14,7 @@
 #import "YALAnimatingTabBarConstants.h"
 #import "Post.h"
 #import "FeedData.h"
+#import "NSURL+ImageGenerator.h"
 #import <ChameleonFramework/Chameleon.h>
 
 @interface AppDelegate ()
@@ -76,10 +77,12 @@
       — Regina Agyare, Founder, Soronko Solutions
      */
     Post *post3 = [Post new];
-    post3.mediaType = @"text";
-    post3.title = @"Innovations of tomorrow";
-    post3.textPost = @"There are many incredible women in tech building the products of tomorrow. Whether it’s Mary Lou Jepsen, who’s working to make phones, laptops and computers self-powered (no more charging!), Corinna ‘Elektra’ Aichele, who’s bringing WiFi to any location, Monica Lam, who leads the MobiSocial group at Stanford and is ‘[creating] a social internet, where users can share anything … while owning their data’ or Ruchi Sanghvi, who’s behind the algorithm that powers our Facebook newsfeeds, the innovations women have made in tech will only be outpaced by the innovations they have yet to make.";
-    post3.username = @"Mic Branded Content Team";
+    post3.mediaType = @"video";
+    post3.title = @"Stereotypes";
+    post3.textPost = @"She++ A talk about stereotypes in tech and the lack of women";
+    post3.username = @"She++";
+    NSURL *videoURL = [[NSBundle mainBundle] URLForResource:@"she++" withExtension:@"mp4"];
+    post3.videoThumbnail = [videoURL thumbnailImagePreview];
     post3.tags = [[NSMutableArray alloc]initWithObjects:@"#innovate #inspire", nil];
     /*
      ericysze [3:32 AM]

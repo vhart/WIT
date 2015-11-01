@@ -39,7 +39,7 @@ UITableViewDelegate
     //Video in Background
     NSURL *videoURL = [[NSBundle mainBundle] URLForResource:@"she++" withExtension:@"mp4"];
     self.myPlayer = [[MPMoviePlayerController alloc] initWithContentURL:videoURL];
-    self.myPlayer.controlStyle = MPMovieControlStyleNone;
+//    self.myPlayer.controlStyle = MPMovieControlStyleNone;
     //[self.myPlayer prepareToPlay];
     [self.myPlayer.view setFrame: CGRectMake(0, 0, 500, 600)];
     [self.view addSubview:self.myPlayer.view];
@@ -109,9 +109,15 @@ UITableViewDelegate
     self.myPlayer.view.hidden = NO;
        [self.myPlayer play];
     
+    [self performSelector:@selector(hideAndStop) withObject:nil afterDelay:10.0];
     //Pause Video  [self.myPlayer pause];
     //Stop Video    [self.myPlayer stop];
     
+}
+
+- (void)hideAndStop {
+    [self.myPlayer stop];
+    self.myPlayer.view.hidden = YES;
 }
 
 
@@ -234,5 +240,16 @@ UITableViewDelegate
     // Pass the selected object to the new view controller.
 }
 */
-
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+    if (self.myPlayer.view.hidden) {
+        self.myPlayer.view.hidden = NO;
+        [self.myPlayer.view removeFromSuperview];
+        self.myPlayer = nil;
+    }
+    //[self.view sendSubviewToBack:self.myPlayer.view];
+    
+//    
+//    self.myPlayer.view.hidden = YES;
+}
 @end
