@@ -8,6 +8,8 @@
 
 #import "AudioPostCreationViewController.h"
 #import <AVFoundation/AVFoundation.h>
+#import "DGActivityIndicatorView/DGActivityIndicatorView.h"
+#import "ShareViewController.h"
 
 
 @interface AudioPostCreationViewController () <AVAudioRecorderDelegate, AVAudioPlayerDelegate>
@@ -20,10 +22,12 @@
 @property (strong, nonatomic) IBOutlet UIButton *recordButton;
 @property (strong, nonatomic) IBOutlet UIButton *playButton;
 @property (strong, nonatomic) IBOutlet UIButton *stopButton;
+@property (weak, nonatomic) IBOutlet UIView *pauseButtonViewContainer;
 
 @property (weak, nonatomic) NSArray *images;
-
-@end
+@property (nonatomic) DGActivityIndicatorView *activityIndicatorView;
+@property (weak, nonatomic) IBOutlet UIView *animationView;
+ @end
 
 @implementation AudioPostCreationViewController
 
@@ -33,6 +37,15 @@
     
     self.playButton.enabled = NO;
     self.stopButton.enabled = NO;
+    
+    self.recordButton.layer.cornerRadius = self.recordButton.frame.size.height / 2;
+    self.playButton.layer.cornerRadius = self.playButton.frame.size.height / 2;
+    self.pauseButtonViewContainer.layer.cornerRadius = self.pauseButtonViewContainer.frame.size.height / 2;
+    
+    self.recordButton.layer.borderWidth = 1;
+    self.playButton.layer.borderWidth = 1;
+    self.pauseButtonViewContainer.layer.borderWidth = 1;
+    
     
     [self audioActions];
     // Music
@@ -46,6 +59,7 @@
     //Pause Music [self.myMusic pause];
     //Stop Music [self.myMusic stop];
     
+    //self.activityIndicatorView = [[DGActivityIndicatorView alloc] initWithType:DGActivityIndicatorAnimationTypeBallScaleRippleMultiple tintColor:[UIColor whiteColor] size:70.0f];
 }
 
 
@@ -139,11 +153,6 @@
     }
 }
 
-
-
-
-
-
 // camera setup
 //- (void)setupCamera{
 //    self.imagePicker = [[UIImagePickerController alloc]init];
@@ -154,6 +163,25 @@
 //    
 //}
 
+- (void)setupActivityIndicator {
+    self.activityIndicatorView = [[DGActivityIndicatorView alloc] initWithType:DGActivityIndicatorAnimationTypeBallScaleRippleMultiple tintColor:[UIColor whiteColor] size:60.0f];
+    _activityIndicatorView.frame = CGRectMake(0.0f, 0.0f, 100.0f, 100.0f);
+    _activityIndicatorView.bounds = self.animationView.bounds;
+    [self.animationView addSubview:_activityIndicatorView];
+    [_activityIndicatorView startAnimating];
+}
+
+
+- (void)playbackActivityIndicator {
+    self.activityIndicatorView = [[DGActivityIndicatorView alloc] initWithType:DGActivityIndicatorAnimationTypeNineDots tintColor:[UIColor whiteColor] size:70.0f];
+    _activityIndicatorView.frame = CGRectMake(0.0f, 0.0f, 100.0f, 100.0f);
+    _activityIndicatorView.bounds = self.animationView.bounds;
+    [self.animationView addSubview:_activityIndicatorView];
+    [_activityIndicatorView startAnimating];
+}
+
+
+
 #pragma mark - IBActions
 
 // camera setup
@@ -162,12 +190,6 @@
 //    
 //    
 //}
-
-
-
-
-
-
 
 - (IBAction)recordAudio:(UIButton *)sender {
     if (!_audioRecorder.recording)
@@ -178,6 +200,7 @@
         
         [self imageSetup];
         //        self.recordButton.imageView.image = [UIImage imageNamed:@"micpurple"];
+        [self setupActivityIndicator];
         
     }
 }
@@ -202,6 +225,8 @@
         else
             [_audioPlayer play];
     }
+//    [self playbackActivityIndicator];
+//    [self.activityIndicatorView setHidden:YES];
 }
 
 - (IBAction)stopAudio:(UIButton *)sender {
@@ -215,6 +240,15 @@
     } else if (_audioPlayer.playing) {
         [_audioPlayer stop];
     }
+    [_activityIndicatorView stopAnimating];
+    
+}
+   
+
+
+- (IBAction)save:(id)sender {
+    [self.navigationController popToRootViewControllerAnimated:YES];
+    
 }
 
 
