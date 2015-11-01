@@ -43,9 +43,9 @@
      self.inputTextView.text = self.post.textPost;
     self.titleTextField.text = self.post.title;
     
-   self.tagTextField.text = [self.post.tags objectAtIndex:1];
+//   self.tagTextField.text = [self.post.tags objectAtIndex:1];
     
-    
+    NSLog(@"[self.post.tags ] %@",self.post.tags);
 }
 
 - (void) viewDidAppear:(BOOL)animated {
@@ -88,8 +88,11 @@
     
     self.post.textPost = self.inputTextView.text;
     self.post.title = self.titleTextField.text;
-    self.post.tags = self.tagTextField.text;
-    
+    [self.post.tags addObject:self.tagTextField.text];
+
+
+
+      [self dismissViewControllerAnimated:YES completion:nil];
     }
 
 
