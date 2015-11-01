@@ -82,7 +82,7 @@
     tabBarController.tabBarView.extraTabBarItemHeight = YALExtraTabBarItemsDefaultHeight;
     tabBarController.tabBarView.offsetForExtraTabBarItems = YALForExtraTabBarItemsDefaultOffset;
     tabBarController.tabBarView.backgroundColor = [UIColor clearColor];
-    tabBarController.tabBarView.tabBarColor = [UIColor colorWithRed:0.992 green:0.376 blue:0.502 alpha:1];
+    tabBarController.tabBarView.tabBarColor = [UIColor colorWithRed:0.714 green:0 blue:0.714 alpha:1];
     
     tabBarController.tabBarViewHeight = YALTabBarViewDefaultHeight;
     tabBarController.tabBarView.tabBarViewEdgeInsets = YALTabBarViewHDefaultEdgeInsets;
