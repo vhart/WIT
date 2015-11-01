@@ -322,7 +322,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="womanIcon" translatesAutoresizingMaskIntoConstraints="NO" id="7wh-HB-sns">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="womanIcon" translatesAutoresizingMaskIntoConstraints="NO" id="7wh-HB-sns">
                                 <rect key="frame" x="20" y="64" width="63" height="61"/>
                                 <animations/>
                                 <constraints>
@@ -330,7 +330,7 @@
                                     <constraint firstAttribute="width" constant="63" id="VYl-pS-vmB"/>
                                 </constraints>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YGB-Wt-oaK">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YGB-Wt-oaK">
                                 <rect key="frame" x="20" y="125" width="560" height="356"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -351,7 +351,7 @@
                                     <outlet property="delegate" destination="Iqg-Jz-YME" id="1mz-pQ-B9E"/>
                                 </connections>
                             </tableView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="text" translatesAutoresizingMaskIntoConstraints="NO" id="jkE-hz-9A7">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="text" translatesAutoresizingMaskIntoConstraints="NO" id="jkE-hz-9A7">
                                 <rect key="frame" x="103" y="72" width="240" height="52"/>
                                 <animations/>
                                 <constraints>
@@ -362,15 +362,10 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="7wh-HB-sns" firstAttribute="top" secondItem="z3K-d5-ZfF" secondAttribute="bottom" id="0NA-rU-CHO"/>
                             <constraint firstItem="ZzD-Yf-QgO" firstAttribute="top" secondItem="YGB-Wt-oaK" secondAttribute="bottom" constant="70" id="0t8-nv-7ep"/>
                             <constraint firstItem="YGB-Wt-oaK" firstAttribute="leading" secondItem="ucS-xK-0zP" secondAttribute="leadingMargin" id="8Sm-bK-k7c"/>
-                            <constraint firstItem="jkE-hz-9A7" firstAttribute="top" secondItem="z3K-d5-ZfF" secondAttribute="bottom" constant="8" id="DfR-Mc-Lvf"/>
-                            <constraint firstItem="YGB-Wt-oaK" firstAttribute="top" secondItem="7wh-HB-sns" secondAttribute="bottom" id="IqX-to-geX"/>
-                            <constraint firstItem="YGB-Wt-oaK" firstAttribute="top" secondItem="jkE-hz-9A7" secondAttribute="bottom" constant="1" id="Ra9-02-9jI"/>
-                            <constraint firstItem="7wh-HB-sns" firstAttribute="leading" secondItem="ucS-xK-0zP" secondAttribute="leadingMargin" id="cpN-YW-Ui1"/>
                             <constraint firstItem="YGB-Wt-oaK" firstAttribute="top" secondItem="z3K-d5-ZfF" secondAttribute="bottom" constant="70" id="hIO-9I-w6u"/>
-                            <constraint firstItem="jkE-hz-9A7" firstAttribute="leading" secondItem="7wh-HB-sns" secondAttribute="trailing" constant="20" id="mAf-5O-u8X"/>
+                            <constraint firstItem="YGB-Wt-oaK" firstAttribute="top" secondItem="z3K-d5-ZfF" secondAttribute="bottom" constant="30" id="pVR-Ma-ctK"/>
                             <constraint firstAttribute="trailingMargin" secondItem="YGB-Wt-oaK" secondAttribute="trailing" id="rPW-YD-OSO"/>
                         </constraints>
                         <variation key="default">
@@ -381,9 +376,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="PDm-l7-vud"/>
                     <connections>
-                        <outlet property="imageIcon" destination="7wh-HB-sns" id="eK7-WI-DEu"/>
                         <outlet property="tableView" destination="YGB-Wt-oaK" id="0E0-9k-oox"/>
-                        <outlet property="textIcon" destination="jkE-hz-9A7" id="14y-QW-eem"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eQ3-jE-62g" userLabel="First Responder" sceneMemberID="firstResponder"/>
