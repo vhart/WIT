@@ -104,7 +104,7 @@ AVAudioPlayerDelegate
 }
 
 - (void)imageSetup {
-    self.recordButton.imageView.image = [self loadingImage];
+//    self.recordButton.imageView.image = [self loadingImage];
     self.recordButton.imageView.animationRepeatCount = 0;
     
     //when you want the animation to start
@@ -114,11 +114,11 @@ AVAudioPlayerDelegate
     
 }
 
-- (UIImage *)loadingImage {
-    self.images = [NSArray arrayWithObjects:[UIImage imageNamed:@"micwhite"],
-                   [UIImage imageNamed:@"micpurple"], nil];
-    return [UIImage animatedImageWithImages:self.images duration:6.0f];
-}
+//- (UIImage *)loadingImage {
+//    self.images = [NSArray arrayWithObjects:[UIImage imageNamed:@"micwhite"],
+//                   [UIImage imageNamed:@"micpurple"], nil];
+//    return [UIImage animatedImageWithImages:self.images duration:6.0f];
+//}
 
 - (void)animateImages {
     if (![self.recordButton.imageView isAnimating]) {
