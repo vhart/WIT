@@ -7,6 +7,7 @@
 //
 
 #import "FeedsViewController.h"
+#import "FeedsTableViewCell.h"
 
 @interface FeedsViewController ()
 <
@@ -47,15 +48,16 @@ UITableViewDelegate
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 2;
+    return 1;
 }
 
 -(UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FeedsIdentifier" forIndexPath:indexPath];
+    FeedsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FeedsIdentifier" forIndexPath:indexPath];
     
     
     cell.textLabel.text = @"bla bla";
+    
 //    cell.detailTextLabel.text = currentResult.title;
     
     return cell;
