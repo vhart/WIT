@@ -20,6 +20,7 @@
 		C7E92E5E1BE51F590097412F /* WITUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E5D1BE51F590097412F /* WITUITests.m */; };
 		C7E92E7B1BE57D200097412F /* Media.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E7A1BE57D200097412F /* Media.m */; settings = {ASSET_TAGS = (); }; };
 		C7E92E7F1BE58DE40097412F /* VideoPostCreationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E7E1BE58DE40097412F /* VideoPostCreationViewController.m */; settings = {ASSET_TAGS = (); }; };
+		C7E92E811BE598790097412F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7E92E801BE598780097412F /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		C7E92E7A1BE57D200097412F /* Media.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Media.m; sourceTree = "<group>"; };
 		C7E92E7D1BE58DE40097412F /* VideoPostCreationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPostCreationViewController.h; sourceTree = "<group>"; };
 		C7E92E7E1BE58DE40097412F /* VideoPostCreationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPostCreationViewController.m; sourceTree = "<group>"; };
+		C7E92E801BE598780097412F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		ECAAC0F33FC7485E1F856266 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F17A4E5F46EC349764F73446 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7E92E811BE598790097412F /* AVFoundation.framework in Frameworks */,
 				227B5950C44DAAB03FDED46F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,6 +113,7 @@
 		AB38C9C2BEEF3FC29F46FF02 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C7E92E801BE598780097412F /* AVFoundation.framework */,
 				78D156BD9D23EF12B29F93FB /* libPods.a */,
 			);
 			name = Frameworks;
