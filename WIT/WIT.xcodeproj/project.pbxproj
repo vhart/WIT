@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1536214D1BE5B73E00ED3D70 /* AudioPostCreationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1536214C1BE5B73E00ED3D70 /* AudioPostCreationViewController.m */; };
 		227B5950C44DAAB03FDED46F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78D156BD9D23EF12B29F93FB /* libPods.a */; };
 		45023A531BE59D9500A776D8 /* TextPostCreationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45023A521BE59D9500A776D8 /* TextPostCreationViewController.m */; };
 		45E1334E1BE53EBF00A18C44 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E1334D1BE53EBF00A18C44 /* TabBarViewController.m */; };
 		848D73CC1BE53BE8009325C5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E391BE51F580097412F /* AppDelegate.m */; };
 		848D73CF1BE53E6D009325C5 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D73CE1BE53E6D009325C5 /* TabBarController.m */; };
 		848D73DD1BE58886009325C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848D73DB1BE58886009325C5 /* Main.storyboard */; };
+		848D73E01BE5A0FF009325C5 /* FeedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D73DF1BE5A0FF009325C5 /* FeedTableViewController.m */; };
+		848D73E41BE5A430009325C5 /* AllFeeds.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D73E31BE5A430009325C5 /* AllFeeds.m */; };
 		848D73E41BE5A430009325C5 /* AllFeeds.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D73E31BE5A430009325C5 /* AllFeeds.m */; };
 		848D742C1BE5C7D0009325C5 /* FeedsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D742B1BE5C7D0009325C5 /* FeedsViewController.m */; settings = {ASSET_TAGS = (); }; };
 		848D742E1BE6554E009325C5 /* FeedsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848D742D1BE6554E009325C5 /* FeedsCell.xib */; settings = {ASSET_TAGS = (); }; };
@@ -22,6 +25,8 @@
 		C765CF541BE5B92B0048A36B /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = C765CF531BE5B92B0048A36B /* Post.m */; settings = {ASSET_TAGS = (); }; };
 		C765CF5A1BE5C26B0048A36B /* VideoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C765CF591BE5C26B0048A36B /* VideoDetailViewController.m */; settings = {ASSET_TAGS = (); }; };
 		C765CF5D1BE6541B0048A36B /* FeedData.m in Sources */ = {isa = PBXBuildFile; fileRef = C765CF5C1BE6541B0048A36B /* FeedData.m */; settings = {ASSET_TAGS = (); }; };
+		C765CF601BE677C00048A36B /* KeepCalm-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C765CF5F1BE677C00048A36B /* KeepCalm-Medium.ttf */; settings = {ASSET_TAGS = (); }; };
+		C765CF621BE677C90048A36B /* Porter Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C765CF611BE677C90048A36B /* Porter Bold.ttf */; settings = {ASSET_TAGS = (); }; };
 		C7E92E371BE51F580097412F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E361BE51F580097412F /* main.m */; };
 		C7E92E431BE51F580097412F /* WIT.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E411BE51F580097412F /* WIT.xcdatamodeld */; };
 		C7E92E451BE51F580097412F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7E92E441BE51F580097412F /* Assets.xcassets */; };
@@ -51,6 +56,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1536214B1BE5B73E00ED3D70 /* AudioPostCreationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPostCreationViewController.h; sourceTree = "<group>"; };
+		1536214C1BE5B73E00ED3D70 /* AudioPostCreationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPostCreationViewController.m; sourceTree = "<group>"; };
 		45023A511BE59D9500A776D8 /* TextPostCreationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextPostCreationViewController.h; sourceTree = "<group>"; };
 		45023A521BE59D9500A776D8 /* TextPostCreationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextPostCreationViewController.m; sourceTree = "<group>"; };
 		45E1334C1BE53EBF00A18C44 /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
@@ -75,6 +82,8 @@
 		C765CF591BE5C26B0048A36B /* VideoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoDetailViewController.m; sourceTree = "<group>"; };
 		C765CF5B1BE6541B0048A36B /* FeedData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedData.h; sourceTree = "<group>"; };
 		C765CF5C1BE6541B0048A36B /* FeedData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedData.m; sourceTree = "<group>"; };
+		C765CF5F1BE677C00048A36B /* KeepCalm-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KeepCalm-Medium.ttf"; sourceTree = "<group>"; };
+		C765CF611BE677C90048A36B /* Porter Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Porter Bold.ttf"; sourceTree = "<group>"; };
 		C7E92E321BE51F580097412F /* WIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WIT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7E92E361BE51F580097412F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C7E92E381BE51F580097412F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -179,6 +188,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C765CF5E1BE677860048A36B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C765CF5F1BE677C00048A36B /* KeepCalm-Medium.ttf */,
+				C765CF611BE677C90048A36B /* Porter Bold.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
 		C7E92E291BE51F570097412F = {
 			isa = PBXGroup;
 			children = (
@@ -204,6 +222,7 @@
 		C7E92E341BE51F580097412F /* WIT */ = {
 			isa = PBXGroup;
 			children = (
+				C765CF5E1BE677860048A36B /* Fonts */,
 				45023A501BE59D0C00A776D8 /* TextPostMake */,
 				C7E92E7C1BE58AC20097412F /* VideoPostMake */,
 				C7E92E781BE57B970097412F /* Parse Media */,
@@ -267,6 +286,8 @@
 				C765CF591BE5C26B0048A36B /* VideoDetailViewController.m */,
 				C7E92E7D1BE58DE40097412F /* VideoPostCreationViewController.h */,
 				C7E92E7E1BE58DE40097412F /* VideoPostCreationViewController.m */,
+				1536214B1BE5B73E00ED3D70 /* AudioPostCreationViewController.h */,
+				1536214C1BE5B73E00ED3D70 /* AudioPostCreationViewController.m */,
 				C765CF4F1BE5A48B0048A36B /* NSURL+ImageGenerator.h */,
 				C765CF501BE5A48B0048A36B /* NSURL+ImageGenerator.m */,
 				C765CF521BE5B92B0048A36B /* Post.h */,
@@ -388,6 +409,8 @@
 			files = (
 				848D73DD1BE58886009325C5 /* Main.storyboard in Resources */,
 				848D742E1BE6554E009325C5 /* FeedsCell.xib in Resources */,
+				C765CF621BE677C90048A36B /* Porter Bold.ttf in Resources */,
+				C765CF601BE677C00048A36B /* KeepCalm-Medium.ttf in Resources */,
 				C7E92E481BE51F580097412F /* LaunchScreen.storyboard in Resources */,
 				C7E92E451BE51F580097412F /* Assets.xcassets in Resources */,
 			);
@@ -469,6 +492,7 @@
 				C765CF511BE5A48B0048A36B /* NSURL+ImageGenerator.m in Sources */,
 				C765CF5A1BE5C26B0048A36B /* VideoDetailViewController.m in Sources */,
 				45E1334E1BE53EBF00A18C44 /* TabBarViewController.m in Sources */,
+				1536214D1BE5B73E00ED3D70 /* AudioPostCreationViewController.m in Sources */,
 				C765CF541BE5B92B0048A36B /* Post.m in Sources */,
 				848D73CC1BE53BE8009325C5 /* AppDelegate.m in Sources */,
 				848D74311BE655A3009325C5 /* FeedsTableViewCell.m in Sources */,

@@ -12,5 +12,5 @@
 @interface VideoDetailViewController : UIViewController
 
 @property (nonatomic) Post *post;
-
+@property (nonatomic) NSMutableArray <Post *> *entries;
 @end
