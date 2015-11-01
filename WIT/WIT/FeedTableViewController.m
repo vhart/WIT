@@ -7,6 +7,10 @@
 //
 
 #import "FeedTableViewController.h"
+#import <Parse/PFQuery.h>
+#import <Parse/Parse.h>
+#import "Media.h"
+
 
 @interface FeedTableViewController ()
 
@@ -16,31 +20,60 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"yooooo");
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+//    Media *media = [[Media alloc] init];
+//    
+//    
+////    [media saveInBackground];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    PFQuery *query = [PFQuery queryWithClassName:@"Media"];
+    
+    //excetute the query
+    [query findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error) {
+        NSLog(@"objects %@", objects);
+        NSLog(@"shhh %@", [[objects objectAtIndex:0] objectForKey:@"dateCreated"]);
+        
+//        if (objects.count!=0) {
+//        NSSortDescriptor *descriptor = [NSSortDescriptor sortDescriptorWithKey:@"dateCreated" ascending:NO];
+//        [objects sortedArrayUsingDescriptors:@[descriptor]];
+//        
+////        self.outings = [NSMutableArray arrayWithArray:objects];
+////        NSLog(@"self.outings: %@", self.outings);
+//        
+//        [self.tableView reloadData];
+//        
+//        }
+        
+    }];
 }
-
 
 //- (void)fetchOutings {
 //    PFQuery *query = [PFQuery queryWithClassName:@"GJOutings"];
 //    [query includeKey:@"entriesArray"];
 //    [query findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error) {
 //        if (objects.count!=0) {
-//            
+//
 //            NSSortDescriptor *descriptor = [NSSortDescriptor sortDescriptorWithKey:@"createdDate" ascending:NO];
 //            [objects sortedArrayUsingDescriptors:@[descriptor]];
-//            
+//
 //            self.outings = [NSMutableArray arrayWithArray:objects];
 //            NSLog(@"self.outings: %@", self.outings);
-//            
+//
 //            [self.tableView reloadData];
 //        }
 //    }];
 //}
+
+
+
+
+
+
+
+
+
 
 
 

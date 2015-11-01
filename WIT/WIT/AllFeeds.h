@@ -10,12 +10,12 @@
 
 @interface AllFeeds : PFObject <PFSubclassing>
 
-@property (nonatomic) NSString *outingName;
-@property (nonatomic) NSDate *createdDate;
-//@property (nonatomic) NSMutableArray <Media *> *entriesArray;
-
-+ (NSString *)parseClassName;
-- (instancetype)initWithNewEntriesArray;
+//@property (nonatomic) NSString *outingName;
+//@property (nonatomic) NSDate *createdDate;
+////@property (nonatomic) NSMutableArray <Media *> *entriesArray;
+//
+//+ (NSString *)parseClassName;
+//- (instancetype)initWithNewEntriesArray;
 
 
 
