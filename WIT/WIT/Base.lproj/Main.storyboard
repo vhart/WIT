@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vOA-Ld-ERE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9046" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vOA-Ld-ERE">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -21,6 +21,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Rjb-oD-arS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
                     </navigationBar>
                     <connections>
                         <segue destination="Icy-To-dHB" kind="relationship" relationship="rootViewController" id="j3U-Hg-hoo"/>
@@ -47,24 +48,28 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Submit Your Story" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRZ-Ay-tWq">
                                         <rect key="frame" x="8" y="15" width="269" height="25"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" name="Porter-BoldDEMO" family="Porter" pointSize="25"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Have you been inspired? Would you like to inspire others? Help women in ... by something something" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i89-yq-7Dr">
                                         <rect key="frame" x="8" y="48" width="584" height="41"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="18"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Your Medium" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OwK-fQ-jL3">
                                         <rect key="frame" x="208" y="114" width="184" height="15"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" name="Porter-BoldDEMO" family="Porter" pointSize="15"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISb-hd-Ujb">
                                         <rect key="frame" x="185" y="144" width="50" height="50"/>
+                                        <animations/>
                                         <color key="backgroundColor" red="0.16828303180000001" green="0.44933085340000001" blue="0.60199652780000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Text">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -72,6 +77,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HEi-H3-oeE">
                                         <rect key="frame" x="365" y="144" width="50" height="50"/>
+                                        <animations/>
                                         <color key="backgroundColor" red="0.16828303180000001" green="0.44933085340000001" blue="0.60199652780000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Video">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -79,6 +85,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B1g-pj-KiY">
                                         <rect key="frame" x="275" y="144" width="50" height="50"/>
+                                        <animations/>
                                         <color key="backgroundColor" red="0.16828303180000001" green="0.44933085340000001" blue="0.60199652780000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="eZT-Gm-3fe"/>
@@ -92,6 +99,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <animations/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="HEi-H3-oeE" firstAttribute="leading" secondItem="B1g-pj-KiY" secondAttribute="trailing" constant="40" id="7we-aj-0WN"/>
@@ -118,16 +126,19 @@
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vQX-Vm-3ik">
                                         <rect key="frame" x="8" y="8" width="562" height="30"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y6n-Ow-VK7">
                                         <rect key="frame" x="8" y="50" width="562" height="30"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJR-mb-rRJ">
                                         <rect key="frame" x="263" y="110" width="74" height="27"/>
+                                        <animations/>
                                         <color key="backgroundColor" red="0.16828303180000001" green="0.44933085340000001" blue="0.60199652780000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Porter-BoldDEMO" family="Porter" pointSize="15"/>
                                         <state key="normal" title="  SUBMIT  ">
@@ -135,6 +146,7 @@
                                         </state>
                                     </button>
                                 </subviews>
+                                <animations/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <constraints>
                                     <constraint firstItem="y6n-Ow-VK7" firstAttribute="top" secondItem="vQX-Vm-3ik" secondAttribute="bottom" constant="12" id="DDR-Lg-y3Z"/>
@@ -148,6 +160,7 @@
                                 </constraints>
                             </view>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="AcW-u9-F3K" firstAttribute="height" secondItem="yV5-Hd-SLu" secondAttribute="height" id="5UW-zb-57T"/>
@@ -341,12 +354,14 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEu-a3-I1r">
                                         <rect key="frame" x="277" y="107" width="47" height="30"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" name="Porter-BoldDEMO" family="Porter" pointSize="18"/>
                                         <state key="normal" title="SAVE">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
                                 </subviews>
+                                <animations/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <constraints>
                                     <constraint firstItem="sEu-a3-I1r" firstAttribute="centerY" secondItem="nhx-4o-aAH" secondAttribute="centerY" id="kwO-fc-W0o"/>
@@ -358,6 +373,7 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lTA-lV-DSj" userLabel="AnimationView">
                                         <rect key="frame" x="270" y="92" width="60" height="60"/>
+                                        <animations/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="60" id="O10-WH-Pim"/>
@@ -366,16 +382,19 @@
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2TC-Lb-ffX">
                                         <rect key="frame" x="379" y="192" width="50" height="50"/>
+                                        <animations/>
                                         <color key="backgroundColor" red="0.16828303180000001" green="0.44933085340000001" blue="0.60199652780000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Button"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMI-gD-UA7">
                                         <rect key="frame" x="154" y="192" width="50" height="50"/>
+                                        <animations/>
                                         <color key="backgroundColor" red="0.16828303180000001" green="0.44933085340000001" blue="0.60199652780000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Button"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2O4-Xe-eAE">
                                         <rect key="frame" x="275" y="192" width="50" height="50"/>
+                                        <animations/>
                                         <color key="backgroundColor" red="0.16828303180000001" green="0.44933085340000001" blue="0.60199652780000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="T6c-RP-MWk"/>
@@ -385,6 +404,7 @@
                                         <state key="normal" title="Button"/>
                                     </button>
                                 </subviews>
+                                <animations/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="QMI-gD-UA7" firstAttribute="width" secondItem="2O4-Xe-eAE" secondAttribute="width" id="6Sb-Wh-ioa"/>
@@ -444,7 +464,7 @@
                                 <rect key="frame" x="0.0" y="136" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="btS-1M-O0F" id="oUR-5f-Vja">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <animations/>
                                 </tableViewCellContentView>
@@ -573,7 +593,7 @@
                                         <rect key="frame" x="0.0" y="28" width="560" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="o8G-BE-3oy" id="4Ru-Td-0R4">
-                                            <rect key="frame" x="0.0" y="0.0" width="560" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <animations/>
                                         </tableViewCellContentView>

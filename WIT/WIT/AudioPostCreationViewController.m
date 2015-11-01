@@ -7,6 +7,7 @@
 //
 
 #import "AudioPostCreationViewController.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface AudioPostCreationViewController () <AVAudioRecorderDelegate, AVAudioPlayerDelegate>
 
@@ -15,6 +16,8 @@
 @property (strong, nonatomic) IBOutlet UIButton *recordButton;
 @property (strong, nonatomic) IBOutlet UIButton *playButton;
 @property (strong, nonatomic) IBOutlet UIButton *stopButton;
+
+@property (weak, nonatomic) NSArray *images;
 
 @end
 
@@ -128,23 +131,23 @@
 
 
 // camera setup
-- (void)setupCamera{
-    self.imagePicker = [[UIImagePickerController alloc]init];
-    self.imagePicker.delegate = self;
-    self.imagePicker.sourceType = UIImagePickerControllerSourceTypeCamera;
-    
-    [self presentViewController:self.imagePicker animated:YES completion:NULL];
-    
-}
+//- (void)setupCamera{
+//    self.imagePicker = [[UIImagePickerController alloc]init];
+//    self.imagePicker.delegate = self;
+//    self.imagePicker.sourceType = UIImagePickerControllerSourceTypeCamera;
+//    
+//    [self presentViewController:self.imagePicker animated:YES completion:NULL];
+//    
+//}
 
 #pragma mark - IBActions
 
 // camera setup
-- (IBAction)startRecording{
-    [self setupCamera];
-    
-    
-}
+//- (IBAction)startRecording{
+//    [self setupCamera];
+//    
+//    
+//}
 
 
 
