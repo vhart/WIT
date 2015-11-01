@@ -20,6 +20,7 @@
 @property (nonatomic) NSInteger upVotes;
 @property (nonatomic) BOOL      upVoted;
 @property (nonatomic) PFFile *mediaFile;
+@property (nonatomic) PFFile *videoThumbnail;
 @property (nonatomic) NSMutableArray <Media*> *mediaReplies;
 
 +(NSString *)parseClassName;

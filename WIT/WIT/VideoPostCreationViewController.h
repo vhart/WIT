@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "Media.h"
+#import "Post.h"
 
 @interface VideoPostCreationViewController : UIViewController
 
 @property (nonatomic) Media *videoEntry;
+@property (nonatomic) NSMutableArray <Post *> *entries;
 
 @end
