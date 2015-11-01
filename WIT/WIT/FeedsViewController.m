@@ -10,6 +10,7 @@
 #import "FeedsTableViewCell.h"
 #import "FeedData.h"
 #import "Post.h"
+#import "FeedsHeaderView.h"
 
 @interface FeedsViewController ()
 <
@@ -27,6 +28,10 @@ UITableViewDelegate
     [super viewDidLoad];
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
+    
+    
+    
+    
     
     
     
@@ -72,18 +77,62 @@ UITableViewDelegate
     
 
 
+    // grab the header nib from the main bundle
+    UINib *headerNib = [UINib nibWithNibName:@"FeedsHeaderView" bundle:nil];
+    
+    // register the header nib for the header identifier
+    [self.tableView registerNib:headerNib forHeaderFooterViewReuseIdentifier:@"FeedsHeaderViewIdentifier"];
+    
+    
+    
+    
+    
 }
+
+
+
+
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    
+    
+    
+    
+    
+    // dequeue the header view from the table view with InstagramHeaderIdentifier
+    FeedsHeaderView *headerView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:@"FeedsHeaderViewIdentifier"];
+    
+    
+    
+    headerView.backgroundView = [[UIView alloc] initWithFrame:headerView.bounds];
+    headerView.backgroundView.backgroundColor = [UIColor whiteColor];
+    Post *postObject = self.displayingFeedData[section];
+    
+    headerView.usernameLabelCell.text = postObject.username;
+    
+         return headerView;
+
+    
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+//- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+  //  return 50.0;
+//}
 
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     NSLog(@" count %lu", (unsigned long)[self.displayingFeedData count] );
     return [self.displayingFeedData count] ;
 }
+
+
+
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 1;
@@ -99,7 +148,7 @@ UITableViewDelegate
     
     
     
-    cell.usernameCell.text = postObject.username;
+//    cell.usernameCell.text = postObject.username;
     cell.titleCell.text = postObject.title;
     cell.tagsCell.text = [NSString stringWithFormat:@"%@ ",[postObject.tags objectAtIndex:0]];
     
@@ -141,9 +190,9 @@ UITableViewDelegate
 }
 
 
-//- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-//    return 50.0;
-//}
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 60.0;
+}
 
 
 

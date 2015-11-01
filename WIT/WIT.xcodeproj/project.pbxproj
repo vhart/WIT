@@ -18,6 +18,8 @@
 		848D742C1BE5C7D0009325C5 /* FeedsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D742B1BE5C7D0009325C5 /* FeedsViewController.m */; };
 		848D742E1BE6554E009325C5 /* FeedsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848D742D1BE6554E009325C5 /* FeedsCell.xib */; };
 		848D74311BE655A3009325C5 /* FeedsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D74301BE655A3009325C5 /* FeedsTableViewCell.m */; };
+		848D74361BE6A128009325C5 /* FeedsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848D74341BE6A127009325C5 /* FeedsHeaderView.xib */; settings = {ASSET_TAGS = (); }; };
+		848D74391BE6A234009325C5 /* FeedsHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D74381BE6A234009325C5 /* FeedsHeaderView.m */; settings = {ASSET_TAGS = (); }; };
 		C765CF4D1BE59FEE0048A36B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C765CF4C1BE59FEE0048A36B /* MobileCoreServices.framework */; };
 		C765CF511BE5A48B0048A36B /* NSURL+ImageGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = C765CF501BE5A48B0048A36B /* NSURL+ImageGenerator.m */; };
 		C765CF541BE5B92B0048A36B /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = C765CF531BE5B92B0048A36B /* Post.m */; };
@@ -71,6 +73,9 @@
 		848D742D1BE6554E009325C5 /* FeedsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedsCell.xib; sourceTree = "<group>"; };
 		848D742F1BE655A3009325C5 /* FeedsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedsTableViewCell.h; sourceTree = "<group>"; };
 		848D74301BE655A3009325C5 /* FeedsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedsTableViewCell.m; sourceTree = "<group>"; };
+		848D74341BE6A127009325C5 /* FeedsHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedsHeaderView.xib; sourceTree = "<group>"; };
+		848D74371BE6A234009325C5 /* FeedsHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedsHeaderView.h; sourceTree = "<group>"; };
+		848D74381BE6A234009325C5 /* FeedsHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedsHeaderView.m; sourceTree = "<group>"; };
 		C765CF4C1BE59FEE0048A36B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		C765CF4F1BE5A48B0048A36B /* NSURL+ImageGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+ImageGenerator.h"; sourceTree = "<group>"; };
 		C765CF501BE5A48B0048A36B /* NSURL+ImageGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+ImageGenerator.m"; sourceTree = "<group>"; };
@@ -170,6 +175,9 @@
 				848D742F1BE655A3009325C5 /* FeedsTableViewCell.h */,
 				848D74301BE655A3009325C5 /* FeedsTableViewCell.m */,
 				848D742D1BE6554E009325C5 /* FeedsCell.xib */,
+				848D74371BE6A234009325C5 /* FeedsHeaderView.h */,
+				848D74381BE6A234009325C5 /* FeedsHeaderView.m */,
+				848D74341BE6A127009325C5 /* FeedsHeaderView.xib */,
 			);
 			name = Feeds;
 			sourceTree = "<group>";
@@ -418,6 +426,7 @@
 				C765CF621BE677C90048A36B /* Porter Bold.ttf in Resources */,
 				C765CF601BE677C00048A36B /* KeepCalm-Medium.ttf in Resources */,
 				C7E92E481BE51F580097412F /* LaunchScreen.storyboard in Resources */,
+				848D74361BE6A128009325C5 /* FeedsHeaderView.xib in Resources */,
 				C7E92E451BE51F580097412F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,6 +505,7 @@
 				C7E92E7B1BE57D200097412F /* Media.m in Sources */,
 				C7E92E7F1BE58DE40097412F /* VideoPostCreationViewController.m in Sources */,
 				C765CF511BE5A48B0048A36B /* NSURL+ImageGenerator.m in Sources */,
+				848D74391BE6A234009325C5 /* FeedsHeaderView.m in Sources */,
 				C765CF5A1BE5C26B0048A36B /* VideoDetailViewController.m in Sources */,
 				45E1334E1BE53EBF00A18C44 /* TabBarViewController.m in Sources */,
 				1536214D1BE5B73E00ED3D70 /* AudioPostCreationViewController.m in Sources */,
