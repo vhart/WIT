@@ -12,6 +12,8 @@
 		848D73CC1BE53BE8009325C5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E391BE51F580097412F /* AppDelegate.m */; };
 		848D73CF1BE53E6D009325C5 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D73CE1BE53E6D009325C5 /* TabBarController.m */; settings = {ASSET_TAGS = (); }; };
 		848D73DD1BE58886009325C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848D73DB1BE58886009325C5 /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
+		848D73E01BE5A0FF009325C5 /* FeedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D73DF1BE5A0FF009325C5 /* FeedTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		848D73E41BE5A430009325C5 /* AllFeeds.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D73E31BE5A430009325C5 /* AllFeeds.m */; settings = {ASSET_TAGS = (); }; };
 		C7E92E371BE51F580097412F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E361BE51F580097412F /* main.m */; };
 		C7E92E431BE51F580097412F /* WIT.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E411BE51F580097412F /* WIT.xcdatamodeld */; };
 		C7E92E451BE51F580097412F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7E92E441BE51F580097412F /* Assets.xcassets */; };
@@ -47,6 +49,10 @@
 		848D73CD1BE53E6C009325C5 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
 		848D73CE1BE53E6D009325C5 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
 		848D73DC1BE58886009325C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		848D73DE1BE5A0FF009325C5 /* FeedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedTableViewController.h; sourceTree = "<group>"; };
+		848D73DF1BE5A0FF009325C5 /* FeedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedTableViewController.m; sourceTree = "<group>"; };
+		848D73E21BE5A430009325C5 /* AllFeeds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllFeeds.h; sourceTree = "<group>"; };
+		848D73E31BE5A430009325C5 /* AllFeeds.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllFeeds.m; sourceTree = "<group>"; };
 		C7E92E321BE51F580097412F /* WIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WIT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7E92E361BE51F580097412F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C7E92E381BE51F580097412F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -110,6 +116,15 @@
 			name = "Login Screen";
 			sourceTree = "<group>";
 		};
+		848D73E11BE5A103009325C5 /* Feeds */ = {
+			isa = PBXGroup;
+			children = (
+				848D73DE1BE5A0FF009325C5 /* FeedTableViewController.h */,
+				848D73DF1BE5A0FF009325C5 /* FeedTableViewController.m */,
+			);
+			name = Feeds;
+			sourceTree = "<group>";
+		};
 		AB38C9C2BEEF3FC29F46FF02 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +170,7 @@
 			children = (
 				C7E92E7C1BE58AC20097412F /* VideoPostMake */,
 				C7E92E781BE57B970097412F /* Parse Media */,
+				848D73E11BE5A103009325C5 /* Feeds */,
 				C7E92E381BE51F580097412F /* AppDelegate.h */,
 				C7E92E391BE51F580097412F /* AppDelegate.m */,
 				848D73DB1BE58886009325C5 /* Main.storyboard */,
@@ -199,6 +215,8 @@
 		C7E92E781BE57B970097412F /* Parse Media */ = {
 			isa = PBXGroup;
 			children = (
+				848D73E21BE5A430009325C5 /* AllFeeds.h */,
+				848D73E31BE5A430009325C5 /* AllFeeds.m */,
 				C7E92E791BE57D200097412F /* Media.h */,
 				C7E92E7A1BE57D200097412F /* Media.m */,
 			);
@@ -382,6 +400,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848D73E41BE5A430009325C5 /* AllFeeds.m in Sources */,
 				C7E92E7B1BE57D200097412F /* Media.m in Sources */,
 				C7E92E7F1BE58DE40097412F /* VideoPostCreationViewController.m in Sources */,
 				45E1334E1BE53EBF00A18C44 /* TabBarViewController.m in Sources */,
@@ -389,6 +408,7 @@
 				C7E92E431BE51F580097412F /* WIT.xcdatamodeld in Sources */,
 				848D73CF1BE53E6D009325C5 /* TabBarController.m in Sources */,
 				C7E92E371BE51F580097412F /* main.m in Sources */,
+				848D73E01BE5A0FF009325C5 /* FeedTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
