@@ -9,13 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface FeedsTableViewCell : UITableViewCell
-@property (weak, nonatomic) IBOutlet UILabel *usernameCell;
+//@property (weak, nonatomic) IBOutlet UILabel *usernameCell;
 @property (weak, nonatomic) IBOutlet UILabel *titleCell;
 @property (weak, nonatomic) IBOutlet UILabel *tagsCell;
 @property (weak, nonatomic) IBOutlet UIButton *hi5Button;
 @property (weak, nonatomic) IBOutlet UIImageView *audioVideoThumbnail;
 @property (weak, nonatomic) IBOutlet UITextView *textPostCell;
 @property (weak, nonatomic) IBOutlet UIImageView *videoPlayingIcon;
+@property (nonatomic) UIImage *hi5ClickedIcon;
 
 
 

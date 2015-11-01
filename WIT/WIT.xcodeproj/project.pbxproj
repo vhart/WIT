@@ -44,6 +44,9 @@
 		153622211BE6A69000ED3D70 /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 153622201BE6A69000ED3D70 /* ShareViewController.m */; };
 		227B5950C44DAAB03FDED46F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78D156BD9D23EF12B29F93FB /* libPods.a */; };
 		45023A531BE59D9500A776D8 /* TextPostCreationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45023A521BE59D9500A776D8 /* TextPostCreationViewController.m */; };
+		45BF604F1BE6B390004E6A96 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45BF604E1BE6B390004E6A96 /* MediaPlayer.framework */; };
+		45BF60511BE6B492004E6A96 /* she++.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 45BF60501BE6B492004E6A96 /* she++.mp4 */; };
+		45BF60531BE6B4A0004E6A96 /* women.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 45BF60521BE6B4A0004E6A96 /* women.mp4 */; };
 		45E1334E1BE53EBF00A18C44 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E1334D1BE53EBF00A18C44 /* TabBarViewController.m */; };
 		848D73CC1BE53BE8009325C5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E92E391BE51F580097412F /* AppDelegate.m */; };
 		848D73CF1BE53E6D009325C5 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D73CE1BE53E6D009325C5 /* TabBarController.m */; };
@@ -52,6 +55,8 @@
 		848D742C1BE5C7D0009325C5 /* FeedsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D742B1BE5C7D0009325C5 /* FeedsViewController.m */; };
 		848D742E1BE6554E009325C5 /* FeedsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848D742D1BE6554E009325C5 /* FeedsCell.xib */; };
 		848D74311BE655A3009325C5 /* FeedsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D74301BE655A3009325C5 /* FeedsTableViewCell.m */; };
+		848D74361BE6A128009325C5 /* FeedsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848D74341BE6A127009325C5 /* FeedsHeaderView.xib */; };
+		848D74391BE6A234009325C5 /* FeedsHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D74381BE6A234009325C5 /* FeedsHeaderView.m */; };
 		C765CF4D1BE59FEE0048A36B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C765CF4C1BE59FEE0048A36B /* MobileCoreServices.framework */; };
 		C765CF511BE5A48B0048A36B /* NSURL+ImageGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = C765CF501BE5A48B0048A36B /* NSURL+ImageGenerator.m */; };
 		C765CF541BE5B92B0048A36B /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = C765CF531BE5B92B0048A36B /* Post.m */; };
@@ -161,6 +166,9 @@
 		153622201BE6A69000ED3D70 /* ShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
 		45023A511BE59D9500A776D8 /* TextPostCreationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextPostCreationViewController.h; sourceTree = "<group>"; };
 		45023A521BE59D9500A776D8 /* TextPostCreationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextPostCreationViewController.m; sourceTree = "<group>"; };
+		45BF604E1BE6B390004E6A96 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		45BF60501BE6B492004E6A96 /* she++.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "she++.mp4"; sourceTree = "<group>"; };
+		45BF60521BE6B4A0004E6A96 /* women.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = women.mp4; sourceTree = "<group>"; };
 		45E1334C1BE53EBF00A18C44 /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
 		45E1334D1BE53EBF00A18C44 /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
 		78D156BD9D23EF12B29F93FB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -174,6 +182,9 @@
 		848D742D1BE6554E009325C5 /* FeedsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedsCell.xib; sourceTree = "<group>"; };
 		848D742F1BE655A3009325C5 /* FeedsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedsTableViewCell.h; sourceTree = "<group>"; };
 		848D74301BE655A3009325C5 /* FeedsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedsTableViewCell.m; sourceTree = "<group>"; };
+		848D74341BE6A127009325C5 /* FeedsHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedsHeaderView.xib; sourceTree = "<group>"; };
+		848D74371BE6A234009325C5 /* FeedsHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedsHeaderView.h; sourceTree = "<group>"; };
+		848D74381BE6A234009325C5 /* FeedsHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedsHeaderView.m; sourceTree = "<group>"; };
 		C765CF4C1BE59FEE0048A36B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		C765CF4F1BE5A48B0048A36B /* NSURL+ImageGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+ImageGenerator.h"; sourceTree = "<group>"; };
 		C765CF501BE5A48B0048A36B /* NSURL+ImageGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+ImageGenerator.m"; sourceTree = "<group>"; };
@@ -215,6 +226,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45BF604F1BE6B390004E6A96 /* MediaPlayer.framework in Frameworks */,
 				C765CF4D1BE59FEE0048A36B /* MobileCoreServices.framework in Frameworks */,
 				C7E92E811BE598790097412F /* AVFoundation.framework in Frameworks */,
 				227B5950C44DAAB03FDED46F /* libPods.a in Frameworks */,
@@ -348,6 +360,9 @@
 				848D742F1BE655A3009325C5 /* FeedsTableViewCell.h */,
 				848D74301BE655A3009325C5 /* FeedsTableViewCell.m */,
 				848D742D1BE6554E009325C5 /* FeedsCell.xib */,
+				848D74371BE6A234009325C5 /* FeedsHeaderView.h */,
+				848D74381BE6A234009325C5 /* FeedsHeaderView.m */,
+				848D74341BE6A127009325C5 /* FeedsHeaderView.xib */,
 			);
 			name = Feeds;
 			sourceTree = "<group>";
@@ -355,6 +370,7 @@
 		AB38C9C2BEEF3FC29F46FF02 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				45BF604E1BE6B390004E6A96 /* MediaPlayer.framework */,
 				C765CF4C1BE59FEE0048A36B /* MobileCoreServices.framework */,
 				C7E92E801BE598780097412F /* AVFoundation.framework */,
 				78D156BD9D23EF12B29F93FB /* libPods.a */,
@@ -428,6 +444,8 @@
 		C7E92E351BE51F580097412F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				45BF60521BE6B4A0004E6A96 /* women.mp4 */,
+				45BF60501BE6B492004E6A96 /* she++.mp4 */,
 				C7E92E361BE51F580097412F /* main.m */,
 			);
 			name = "Supporting Files";
@@ -594,10 +612,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				848D73DD1BE58886009325C5 /* Main.storyboard in Resources */,
+				45BF60511BE6B492004E6A96 /* she++.mp4 in Resources */,
 				848D742E1BE6554E009325C5 /* FeedsCell.xib in Resources */,
+				45BF60531BE6B4A0004E6A96 /* women.mp4 in Resources */,
 				C765CF621BE677C90048A36B /* Porter Bold.ttf in Resources */,
 				C765CF601BE677C00048A36B /* KeepCalm-Medium.ttf in Resources */,
 				C7E92E481BE51F580097412F /* LaunchScreen.storyboard in Resources */,
+				848D74361BE6A128009325C5 /* FeedsHeaderView.xib in Resources */,
 				C7E92E451BE51F580097412F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -690,6 +711,7 @@
 				153622121BE6A3F600ED3D70 /* DGActivityIndicatorLineScalePartyAnimation.m in Sources */,
 				153622161BE6A3F600ED3D70 /* DGActivityIndicatorRotatingSandglassAnimation.m in Sources */,
 				153622211BE6A69000ED3D70 /* ShareViewController.m in Sources */,
+				848D74391BE6A234009325C5 /* FeedsHeaderView.m in Sources */,
 				C765CF5A1BE5C26B0048A36B /* VideoDetailViewController.m in Sources */,
 				1536221A1BE6A3F600ED3D70 /* DGActivityIndicatorTriangleSkewSpinAnimation.m in Sources */,
 				45E1334E1BE53EBF00A18C44 /* TabBarViewController.m in Sources */,
