@@ -8,6 +8,7 @@
 
 #import "TextPostCreationViewController.h"
 #import "Post.h"
+#import "FeedData.h"
 
 @interface TextPostCreationViewController () <UITextViewDelegate>
 
@@ -79,6 +80,7 @@
         [self.view endEditing:YES];
         
         [self savePostText];
+     [[FeedData sharedModel]. feedData addObject:self.post];
     }
     
 #pragma mark -
@@ -89,8 +91,6 @@
     self.post.textPost = self.inputTextView.text;
     self.post.title = self.titleTextField.text;
     [self.post.tags addObject:self.tagTextField.text];
-
-
 
       [self dismissViewControllerAnimated:YES completion:nil];
     }

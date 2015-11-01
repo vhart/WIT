@@ -425,15 +425,11 @@
         </scene>
     </scenes>
     <resources>
-<<<<<<< HEAD
         <image name="audioIcon" width="35" height="35"/>
         <image name="newsFeed" width="29" height="26"/>
         <image name="penIcon" width="32" height="32"/>
         <image name="shareIcon" width="512" height="512"/>
         <image name="videoIcon" width="29" height="29"/>
-=======
-        <image name="text" width="595" height="77"/>
-        <image name="womanIcon" width="830" height="731"/>
->>>>>>> 868065e75c6dfb948ba38fcb6f793f3e918cb5fb
+
     </resources>
 </document>
