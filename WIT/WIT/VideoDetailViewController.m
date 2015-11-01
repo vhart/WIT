@@ -8,9 +8,11 @@
 
 #import "VideoDetailViewController.h"
 #import <AVFoundation/AVFoundation.h>
-
+#import <MediaPlayer/MediaPlayer.h>
 @interface VideoDetailViewController ()
 
+
+@property (nonatomic) MPMoviePlayerController *myPlayer;
 @property (nonatomic,weak) UIView *videoView;
 @property (nonatomic) AVPlayer *avPlayer;
 @property (nonatomic) UILabel *titleLabel;
@@ -36,6 +38,19 @@
     [self.avPlayer play];
     self.isPlaying = YES;
     // Do any additional setup after loading the view.
+    
+    //Video in Background
+    NSURL *videoURL = [[NSBundle mainBundle] URLForResource:@"she++" withExtension:@"mp4"];
+    self.myPlayer = [[MPMoviePlayerController alloc] initWithContentURL:videoURL];
+    self.myPlayer.controlStyle = MPMovieControlStyleNone;
+    //[self.myPlayer prepareToPlay];
+    [self.myPlayer.view setFrame: CGRectMake(0, -500, 2000, 1600)];
+    [self.view addSubview:self.myPlayer.view];
+    [self.view sendSubviewToBack:self.myPlayer.view];
+    
+    //Play Video    [self.myPlayer play];
+    //Pause Video  [self.myPlayer pause];
+    //Stop Video    [self.myPlayer stop];
 }
 
 - (void)didReceiveMemoryWarning {
