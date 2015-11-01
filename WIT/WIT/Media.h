@@ -8,10 +8,12 @@
 
 #import "PFObject.h"
 #import <Parse/Parse.h>
+#import <UIKit/UIKit.h>
+
 
 @interface Media : PFObject <PFSubclassing>
 
-@property (nonatomic) NSString *username;
+
 @property (nonatomic) NSString *textPost;
 @property (nonatomic) NSString *fileType;
 @property (nonatomic) NSString *fileExtension;
