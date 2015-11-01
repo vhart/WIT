@@ -44,16 +44,6 @@
     self.imagePicker = [[UIImagePickerController alloc]init];
     self.imagePicker.delegate = self;
     self.imagePicker.sourceType = UIImagePickerControllerSourceTypeCamera;
-
-    
-    [self presentViewController:self.imagePicker animated:YES completion:NULL];
-    
-}
-
-// camera setup
-- (IBAction)startRecording{
-    [self setupCamera];
-
     self.imagePicker.mediaTypes = [[NSArray alloc]initWithObjects:(NSString *)kUTTypeMovie, nil];
     self.imagePicker.videoMaximumDuration = 10.0f;
     self.imagePicker.videoQuality = UIImagePickerControllerQualityTypeHigh;
