@@ -12,6 +12,8 @@
 #import "YALTabBarItem.h"
 #import "YALFoldingTabBarController.h"
 #import "YALAnimatingTabBarConstants.h"
+#import "Post.h"
+#import "FeedData.h"
 
 
 
@@ -30,6 +32,120 @@
     
     [Media registerSubclass];
     [self setupYALTabBarController];
+    
+    Post *post9 = [Post new];
+    post9.mediaType = @"text";
+    post9.title = @"Control the media. Use the media. Inspire";
+    post9.textPost = @"The media has a role to play – how many techy girls do we see on children's TV and in papers and magazines? Girls who aren't already in the industry or don't know anyone in the industry have nothing to look to, or to aspire to.";
+    post9.username = @"Anne-Marie Imafidon heads up the Stemettes project";
+    post9.tags = [[NSMutableArray alloc]initWithObjects:@"#media #inspire", nil];
+    /*
+     ericysze [3:41 AM]
+     Anne-Marie Imafidon heads up the Stemettes project: "The media has a role to play – how many techy girls do we see on children's TV and in papers and magazines? Girls who aren't already in the industry or don't know anyone in the industry have nothing to look to, or to aspire to."
+     */
+    
+    Post *post1 = [Post new];
+    post1.mediaType = @"text";
+    post1.title = @"You have to be tough for the uphill battle";
+    post1.textPost = @"Do the brave thing, do the thing that scares you a little, and amazing things happen. Play it safe or start from fear, things just end up average or worse. Now, I try to be brave as often as I can. It doesn’t always happen, old habits die hard, but when it does it’s wonderful.";
+    post1.username = @"Joanna Bloor, VP of Sales at Pandora";
+    post1.tags = [[NSMutableArray alloc]initWithObjects:@"#fearNot", nil];
+    
+    /*
+     You have to be tough for the uphill battle.
+     “Do the brave thing, do the thing that scares you a little, and amazing things happen. Play it safe or start from fear, things just end up average or worse. Now, I try to be brave as often as I can. It doesn’t always happen, old habits die hard, but when it does it’s wonderful.”
+     
+      — Joanna Bloor, VP of Sales at Pandora
+     */
+    Post *post2 = [Post new];
+    post2.mediaType = @"text";
+    post2.title = @"Our 'Places'";
+    post2.textPost = @"I was told I’d never make it to VP rank because I was too outspoken. Maybe so, but I think men will always find an excuse for keeping women in their ‘place.’ So, let’s make that place the executive suite and start more of our own companies.";
+    post2.username = @"Jean Bartik (Deceased), Programmer, ENIAC";
+    post2.tags = [[NSMutableArray alloc]initWithObjects:@"#aimHigh #WiT", nil];
+    /*
+     “I was told I’d never make it to VP rank because I was too outspoken. Maybe so, but I think men will always find an excuse for keeping women in their ‘place.’ So, let’s make that place the executive suite and start more of our own companies.”
+     
+     — Jean Bartik (Deceased), Programmer, ENIAC
+     
+     “By learning to create technology, girls learn to speak up.”
+     
+      — Regina Agyare, Founder, Soronko Solutions
+     */
+    Post *post3 = [Post new];
+    post3.mediaType = @"text";
+    post3.title = @"Innovations of tomorrow";
+    post3.textPost = @"There are many incredible women in tech building the products of tomorrow. Whether it’s Mary Lou Jepsen, who’s working to make phones, laptops and computers self-powered (no more charging!), Corinna ‘Elektra’ Aichele, who’s bringing WiFi to any location, Monica Lam, who leads the MobiSocial group at Stanford and is ‘[creating] a social internet, where users can share anything … while owning their data’ or Ruchi Sanghvi, who’s behind the algorithm that powers our Facebook newsfeeds, the innovations women have made in tech will only be outpaced by the innovations they have yet to make.";
+    post3.username = @"Mic Branded Content Team";
+    post3.tags = [[NSMutableArray alloc]initWithObjects:@"#innovate #inspire", nil];
+    /*
+     ericysze [3:32 AM]
+     “There are many incredible women in tech building the products of tomorrow. Whether it’s Mary Lou Jepsen, who’s working to make phones, laptops and computers self-powered (no more charging!), Corinna ‘Elektra’ Aichele, who’s bringing WiFi to any location, Monica Lam, who leads the MobiSocial group at Stanford and is ‘[creating] a social internet, where users can share anything … while owning their data’ or Ruchi Sanghvi, who’s behind the algorithm that powers our Facebook newsfeeds, the innovations women have made in tech will only be outpaced by the innovations they have yet to make.”
+     
+     —  Mic Branded Content Team
+     */
+    Post *post4 = [Post new];
+    post4.mediaType = @"text";
+    post4.title = @"I deserve to be treated EQUALLY";
+    post4.textPost = @"Being a female during this tech era is an incredible experience. It’s what all women have been waiting for because it has given us a chance to finally say ‘I deserve to be treated equally’ and actually be heard by people around the world. Tech and sales are no longer just a man’s sport, and it’s not just men who have kept us away from entering the arena. It has been us telling ourselves that we are not equal and that we are not meant to be aggressive; we are to act ‘lady like.’ Well it’s time for the ladies to step in and show the tech industry that we are women, and we can sell! The time to discuss is gone and the time to take action has come! It’s as SIMPLE as that.";
+    post4.username = @"Masch-al Malek, Sales Development Representative, Kissmetrics";
+    post4.tags = [[NSMutableArray alloc]initWithObjects:@"#equals #breakTheMold", nil];
+    /*
+     ericysze [3:32 AM]
+     “Being a female during this tech era is an incredible experience. It’s what all women have been waiting for because it has given us a chance to finally say ‘I deserve to be treated equally’ and actually be heard by people around the world. Tech and sales are no longer just a man’s sport, and it’s not just men who have kept us away from entering the arena. It has been us telling ourselves that we are not equal and that we are not meant to be aggressive; we are to act ‘lady like.’ Well it’s time for the ladies to step in and show the tech industry that we are women, and we can sell! The time to discuss is gone and the time to take action has come! It’s as SIMPLE as that.”
+     
+     — Masch-al Malek, Sales Development Representative, Kissmetrics
+     */
+    Post *post5 = [Post new];
+    post5.mediaType = @"text";
+    post5.title = @"Fear";
+    post5.textPost = @"Women shouldn’t be afraid to put themselves forward.";
+    post5.username = @"Sarah Wood, Co-founder and COO, Unruly Media";
+    post5.tags = [[NSMutableArray alloc]initWithObjects:@"#fearNot", nil];
+    /*
+     ericysze [3:36 AM]
+     “Women shouldn’t be afraid to put themselves forward.” Sarah Wood, Co-founder and COO, Unruly Media
+     */
+    Post *post6 = [Post new];
+    post6.mediaType = @"text";
+    post6.title = @"Speak Up";
+    post6.textPost = @"Women who are already in tech need to be vocally supportive of other women, and senior women need to help junior women learn to negotiate the network. And we need to encourage others to take that leap and get involved in an industry that's incredibly energetic, exciting and satisfying.";
+    post6.username = @"Suw Charman-Anderson";
+    post6.tags = [[NSMutableArray alloc]initWithObjects:@"#speak #takeTheLeap", nil];
+    
+    /*
+     ericysze [3:39 AM]
+     Speak up
+     Suw Charman-Anderson: "Women who are already in tech need to be vocally supportive of other women, and senior women need to help junior women learn to negotiate the network. And we need to encourage others to take that leap and get involved in an industry that's incredibly energetic, exciting and satisfying."
+     */
+    
+    Post *post7 = [Post new];
+    post7.mediaType = @"text";
+    post7.title = @"Research companies when you apply for jobs";
+    post7.textPost = @"When you interview for a job, you're interviewing them as much as they are interviewing you. There are plenty of tech companies with supportive, healthy cultures, so and it's a matter of avoiding companies which are less welcoming to women. That may lengthen the job search a little, but it'll be worth it in the long run.";
+    post7.username = @"Suw Charman-Anderson";
+    post7.tags = [[NSMutableArray alloc]initWithObjects:@"#techCulture #landingTheJob", nil];
+    
+    /*
+     ericysze [3:40 AM]
+     Research companies when you apply for jobs
+     Suw Charman-Anderson: "When you interview for a job, you're interviewing them as much as they are interviewing you. There are plenty of tech companies with supportive, healthy cultures, so and it's a matter of avoiding companies which are less welcoming to women. That may lengthen the job search a little, but it'll be worth it in the long run."
+     */
+    
+    Post *post8 = [Post new];
+    post8.mediaType = @"text";
+    post8.title = @"Let's hear your voice";
+    post8.textPost = @"It's a male-dominated environment, but it's not that scary and you can help to change it. If you perform your best then you'll excel whether you're female or not. There are women out there being highly successful and loving their tech careers. We need to hear from women at all points in their career and show that it's a great path to chose.";
+    post8.username = @"Jenny Griffiths";
+    post8.tags = [[NSMutableArray alloc]initWithObjects:@"#voiceYourself", nil];
+    
+    /*
+     ericysze [3:40 AM]
+     Jenny Griffiths: "It's a male-dominated environment, but it's not that scary and you can help to change it. If you perform your best then you'll excel whether you're female or not. There are women out there being highly successful and loving their tech careers. We need to hear from women at all points in their career and show that it's a great path to chose."
+     */
+    
+    [[FeedData sharedModel].feedData addObjectsFromArray:@[post1, post2, post3, post4, post5, post6, post7, post8, post9]];
+    
     
     return YES;
 }
@@ -63,10 +179,10 @@
     
     //prepare rightBarItems
     YALTabBarItem *item3 = [[YALTabBarItem alloc] initWithItemImage:[UIImage imageNamed:@"audioIcon"]
-                                                      leftItemImage:[UIImage imageNamed:nil]
+                                                      leftItemImage:nil
                                                      rightItemImage:[UIImage imageNamed:@"audioIcon"]];
     YALTabBarItem *item4 = [[YALTabBarItem alloc] initWithItemImage:[UIImage imageNamed:@"videoIcon"]
-                                                      leftItemImage:[UIImage imageNamed:nil]
+                                                      leftItemImage:nil
                                                      rightItemImage:[UIImage imageNamed:@"videoIcon"]];
     
     
@@ -84,7 +200,7 @@
     tabBarController.tabBarView.backgroundColor = [UIColor clearColor];
     tabBarController.tabBarView.tabBarColor = [UIColor colorWithRed:0.714 green:0 blue:0.714 alpha:1];
     
-    tabBarController.tabBarViewHeight = YALTabBarViewDefaultHeight;
+    tabBarController.tabBarViewHeight = 10;
     tabBarController.tabBarView.tabBarViewEdgeInsets = YALTabBarViewHDefaultEdgeInsets;
     tabBarController.tabBarView.tabBarItemsEdgeInsets = YALTabBarViewItemsDefaultEdgeInsets;
     

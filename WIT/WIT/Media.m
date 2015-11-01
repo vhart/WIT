@@ -20,6 +20,7 @@
 @dynamic upVoted;
 @dynamic mediaFile;
 @dynamic mediaReplies;
+@dynamic videoThumbnail;
 
 +(NSString *)parseClassName{
     
