@@ -182,7 +182,12 @@ UITableViewDelegate
     return cell;
 }
 
-
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    CGRect rect = self.tableView.tableHeaderView.frame;
+    rect.origin.y = MIN(0, self.tableView.contentOffset.y);
+    self.tableView.tableHeaderView.frame = rect;
+}
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(nonnull NSIndexPath *)indexPath{
     

@@ -15,8 +15,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="450" height="449"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Post Title" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acU-QX-l8y">
-                        <rect key="frame" x="58" y="13" width="334" height="17"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post Title" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acU-QX-l8y">
+                        <rect key="frame" x="58" y="13" width="334" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="xEh-A3-JhE"/>
                         </constraints>
@@ -29,8 +29,8 @@
                             </mask>
                         </variation>
                     </label>
-                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q5q-eh-SFt">
-                        <rect key="frame" x="0.0" y="40" width="450" height="265"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q5q-eh-SFt">
+                        <rect key="frame" x="0.0" y="43" width="450" height="265"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hi5IconTapped" translatesAutoresizingMaskIntoConstraints="NO" id="pUZ-4j-a6R" userLabel="Audio/VideoImage">
                                 <rect key="frame" x="0.0" y="0.0" width="450" height="265"/>
@@ -48,7 +48,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="pUZ-4j-a6R" secondAttribute="trailing" id="1z6-jO-sym"/>
                             <constraint firstAttribute="width" secondItem="q5q-eh-SFt" secondAttribute="height" multiplier="469:276" id="4i0-Wn-B1A"/>
@@ -63,8 +63,8 @@
                             <constraint firstItem="T2i-2V-gdu" firstAttribute="top" secondItem="q5q-eh-SFt" secondAttribute="top" constant="10" id="uDZ-U9-IbK"/>
                         </constraints>
                     </view>
-                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kk9-OQ-vbw">
-                        <rect key="frame" x="379" y="307" width="53" height="54"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kk9-OQ-vbw">
+                        <rect key="frame" x="379" y="310" width="53" height="54"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="53" id="cPP-F8-UEP"/>
                             <constraint firstAttribute="height" constant="54" id="hPF-Wm-y5f"/>
@@ -74,8 +74,8 @@
                             <action selector="hi5ButtonTapped:" destination="D49-Z0-VDR" eventType="touchUpInside" id="6kD-6P-4nH"/>
                         </connections>
                     </button>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="tags" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NOr-B8-OEJ">
-                        <rect key="frame" x="18" y="324" width="351" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tags" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NOr-B8-OEJ">
+                        <rect key="frame" x="18" y="327" width="351" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="aiM-8N-pIG"/>
                         </constraints>
