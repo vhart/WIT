@@ -3,3 +3,4 @@ pod "AFNetworking", "~> 2.6"
 pod 'Parse'
 pod 'ParseUI', '~> 1.1'
 pod 'FoldingTabBar', '~> 1.0.1'
+pod 'ChameleonFramework', '~> 2.0'
