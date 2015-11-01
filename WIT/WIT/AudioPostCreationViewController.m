@@ -12,6 +12,9 @@
 
 @interface AudioPostCreationViewController () <AVAudioRecorderDelegate, AVAudioPlayerDelegate>
 
+@property (nonatomic) AVAudioPlayer *myMusic;
+
+
 @property (strong, nonatomic) AVAudioRecorder *audioRecorder;
 @property (strong, nonatomic) AVAudioPlayer *audioPlayer;
 @property (strong, nonatomic) IBOutlet UIButton *recordButton;
@@ -32,6 +35,16 @@
     self.stopButton.enabled = NO;
     
     [self audioActions];
+    // Music
+    // Construct URL to sound file
+    NSString *path = [NSString stringWithFormat:@"%@/women.mp4", [[NSBundle mainBundle] resourcePath]];
+    NSURL *soundUrl = [NSURL fileURLWithPath:path];
+    self.myMusic = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
+    
+    
+    //Play Music  [self.myMusic play];
+    //Pause Music [self.myMusic pause];
+    //Stop Music [self.myMusic stop];
     
 }
 
