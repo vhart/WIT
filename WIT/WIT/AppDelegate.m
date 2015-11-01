@@ -31,7 +31,7 @@
     
     
     [Media registerSubclass];
-    [self setupYALTabBarController];
+    //[self setupYALTabBarController];
     
     Post *post9 = [Post new];
     post9.mediaType = @"text";
@@ -200,7 +200,8 @@
     tabBarController.tabBarView.backgroundColor = [UIColor clearColor];
     tabBarController.tabBarView.tabBarColor = [UIColor colorWithRed:0.714 green:0 blue:0.714 alpha:1];
     
-    tabBarController.tabBarViewHeight = 10;
+    tabBarController.tabBarViewHeight = 55;
+    
     tabBarController.tabBarView.tabBarViewEdgeInsets = YALTabBarViewHDefaultEdgeInsets;
     tabBarController.tabBarView.tabBarItemsEdgeInsets = YALTabBarViewItemsDefaultEdgeInsets;
     
