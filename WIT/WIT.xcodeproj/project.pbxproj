@@ -884,9 +884,10 @@
 			baseConfigurationReference = ECAAC0F33FC7485E1F856266 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = WIT/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = nyc.c4q.vhart.WIT;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikekavouras.WIT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -896,9 +897,10 @@
 			baseConfigurationReference = F17A4E5F46EC349764F73446 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = WIT/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = nyc.c4q.vhart.WIT;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikekavouras.WIT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

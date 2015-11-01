@@ -11,12 +11,14 @@
 #import "FeedData.h"
 #import "Post.h"
 #import "FeedsHeaderView.h"
+#import <MediaPlayer/MediaPlayer.h>
 
 @interface FeedsViewController ()
 <
 UITableViewDataSource,
 UITableViewDelegate
-> 
+>
+@property (nonatomic) MPMoviePlayerController *myPlayer;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic) NSMutableArray <Post *> *displayingFeedData;
 
@@ -33,8 +35,21 @@ UITableViewDelegate
     
     
     
+
+    //Video in Background
+    NSURL *videoURL = [[NSBundle mainBundle] URLForResource:@"she++" withExtension:@"mp4"];
+    self.myPlayer = [[MPMoviePlayerController alloc] initWithContentURL:videoURL];
+    self.myPlayer.controlStyle = MPMovieControlStyleNone;
+    //[self.myPlayer prepareToPlay];
+    [self.myPlayer.view setFrame: CGRectMake(0, 0, 500, 600)];
+    [self.view addSubview:self.myPlayer.view];
+    //[self.view sendSubviewToBack:self.myPlayer.view];
     
     
+    self.myPlayer.view.hidden = YES;
+    //Play Video    [self.myPlayer play];
+    //Pause Video  [self.myPlayer pause];
+    //Stop Video    [self.myPlayer stop];
     
     
     
@@ -90,7 +105,14 @@ UITableViewDelegate
 }
 
 
-
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    self.myPlayer.view.hidden = NO;
+       [self.myPlayer play];
+    
+    //Pause Video  [self.myPlayer pause];
+    //Stop Video    [self.myPlayer stop];
+    
+}
 
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
