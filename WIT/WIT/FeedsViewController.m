@@ -33,6 +33,18 @@ UITableViewDelegate
     self.imageIcon.frame = CGRectMake(0.0f, 0.0f, 10.0f, 10.0f);
     [UIView commitAnimations];
     
+    
+    
+    // tell the table view to auto adjust the height of each cell
+//    self.tableView.rowHeight = UITableViewAutomaticDimension;
+//    self.tableView.estimatedRowHeight = 12.0;
+    
+    // grab the nib from the main bundle
+    UINib *nib = [UINib nibWithNibName:@"FeedsCell" bundle:nil];
+    
+    // register the nib for the cell identifer
+    [self.tableView registerNib:nib forCellReuseIdentifier:@"FeedsCellIdentifier"];
+    
 
 
 }
@@ -44,7 +56,7 @@ UITableViewDelegate
 
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 2;
+    return 1;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -53,11 +65,23 @@ UITableViewDelegate
 
 -(UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    FeedsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FeedsIdentifier" forIndexPath:indexPath];
+    FeedsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FeedsCellIdentifier" forIndexPath:indexPath];
     
     
-    cell.textLabel.text = @"bla bla";
+    cell.titleCell.text = @"title";
+    NSLog(@"cell.titleCell.text %@",cell.titleCell.text);
     
+    cell.usernameCell.text = @"name";
+    cell.tagsCell.text = @"tags";
+    
+    
+//    @property (weak, nonatomic) IBOutlet UILabel *usernameCell;
+//    @property (weak, nonatomic) IBOutlet UILabel *titleCell;
+//    @property (weak, nonatomic) IBOutlet UILabel *tagsCell;
+//    @property (weak, nonatomic) IBOutlet UIButton *hi5Button;
+//    @property (weak, nonatomic) IBOutlet UIImageView *audioVideoThumbnail;
+//    @property (weak, nonatomic) IBOutlet UITextView *textPostCell;
+//    @property (weak, nonatomic) IBOutlet UIImageView *videoPlayingIcon;
 //    cell.detailTextLabel.text = currentResult.title;
     
     return cell;
