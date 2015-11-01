@@ -18,12 +18,6 @@
 @property (nonatomic) NSURL *videoURL;
 @property (nonatomic) Post *post;
 
-// audio recording/playback properties
-@property (strong, nonatomic) AVAudioRecorder *audioRecorder;
-@property (strong, nonatomic) AVAudioPlayer *audioPlayer;
-@property (strong, nonatomic) IBOutlet UIButton *recordButton;
-@property (strong, nonatomic) IBOutlet UIButton *playButton;
-@property (strong, nonatomic) IBOutlet UIButton *stopButton;
 
 @end
 
@@ -39,102 +33,6 @@
  
  }
 
-
-#pragma mark - Functions
-
-- (void)audioActions {
-    NSArray *dirPaths;
-    NSString *docsDir;
-    
-    dirPaths = NSSearchPathForDirectoriesInDomains(
-                                                   NSDocumentDirectory, NSUserDomainMask, YES);
-    docsDir = dirPaths[0];
-    
-    NSString *soundFilePath = [docsDir
-                               stringByAppendingPathComponent:@"sound.caf"];
-    
-    NSURL *soundFileURL = [NSURL fileURLWithPath:soundFilePath];
-    
-    NSDictionary *recordSettings = [NSDictionary
-                                    dictionaryWithObjectsAndKeys:
-                                    [NSNumber numberWithInt:AVAudioQualityMin],
-                                    AVEncoderAudioQualityKey,
-                                    [NSNumber numberWithInt:16],
-                                    AVEncoderBitRateKey,
-                                    [NSNumber numberWithInt: 2],
-                                    AVNumberOfChannelsKey,
-                                    [NSNumber numberWithFloat:44100.0],
-                                    AVSampleRateKey,
-                                    nil];
-    
-    NSError *error = nil;
-    
-    AVAudioSession *audioSession = [AVAudioSession sharedInstance];
-    [audioSession setCategory:AVAudioSessionCategoryPlayAndRecord
-                        error:nil];
-    
-    _audioRecorder = [[AVAudioRecorder alloc]
-                      initWithURL:soundFileURL
-                      settings:recordSettings
-                      error:&error];
-    
-    if (error)
-    {
-        NSLog(@"error: %@", [error localizedDescription]);
-    } else {
-        [_audioRecorder prepareToRecord];
-    }
-}
-
-- (void)runningLabel {
-    //
-    //    [UIImage animatedImageWithImages:self.images duration:0.88 delay:0.5 options:UIViewAnimationOptionOverrideInheritedDuration | UIViewAnimationOptionRepeat animations:^{
-    //        self.recordButton.imageView.image = [UIImage imageNamed:@"micpurple"];
-    //    } completion:^(BOOL finished) {
-    //        //titleLabel.minX = titleView.width; //this is the problem, you should not set minX again while  UIViewAnimationOptionRepeat also is animation option
-    //        self.recordButton.imageView.image = [UIImage imageNamed:@"micwhite"];
-    //        [self runningLabel];
-    //    }];
-    
-    
-    //     [self.micWhite setBackgroundImage:[UIImage animatedImageWithImages:self.images duration:2.0] forState:UIControlStateNormal];
-    
-}
-
-- (void)imageSetup {
-//    self.recordButton.imageView.image = [self loadingImage];
-    self.recordButton.imageView.animationRepeatCount = 0;
-    
-    //when you want the animation to start
-    [self animateImages];
-    //then later at some appropriate time:
-    [self stopAnimatingImages];
-    
-}
-
-//- (UIImage *)loadingImage {
-//    self.images = [NSArray arrayWithObjects:[UIImage imageNamed:@"micwhite"],
-//                   [UIImage imageNamed:@"micpurple"], nil];
-//    return [UIImage animatedImageWithImages:self.images duration:6.0f];
-//}
-
-- (void)animateImages {
-    if (![self.recordButton.imageView isAnimating]) {
-        [self.recordButton.imageView startAnimating];
-    }
-}
-
-- (void)stopAnimatingImages {
-    if ([self.recordButton.imageView isAnimating]) {
-        [self.recordButton.imageView stopAnimating];
-    }
-}
-
-
-
-
-
-
 // camera setup
 - (void)setupCamera{
     self.imagePicker = [[UIImagePickerController alloc]init];
@@ -142,7 +40,7 @@
     self.imagePicker.sourceType = UIImagePickerControllerSourceTypeCamera;
     self.imagePicker.mediaTypes = [[NSArray alloc]initWithObjects:(NSString *)kUTTypeMovie, nil];
     self.imagePicker.videoMaximumDuration = 10.0f;
-    self.imagePicker.videoQuality = UIImagePickerControllerQualityTypeMedium;
+    self.imagePicker.videoQuality = UIImagePickerControllerQualityTypeHigh;
     [self presentViewController:self.imagePicker animated:YES completion:NULL];
     
 }
