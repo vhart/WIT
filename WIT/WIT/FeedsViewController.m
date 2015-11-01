@@ -8,15 +8,17 @@
 
 #import "FeedsViewController.h"
 #import "FeedsTableViewCell.h"
+#import "FeedData.h"
+#import "Post.h"
 
 @interface FeedsViewController ()
 <
 UITableViewDataSource,
 UITableViewDelegate
->
-@property (weak, nonatomic) IBOutlet UIImageView *imageIcon;
-@property (weak, nonatomic) IBOutlet UIImageView *textIcon;
+> 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (nonatomic) NSMutableArray <Post *> *displayingFeedData;
+
 @end
 
 @implementation FeedsViewController
@@ -26,18 +28,29 @@ UITableViewDelegate
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     
-    self.imageIcon.frame = CGRectMake(0.0f, 0.0f, 1024.0f, 768.0f);
-    [UIView beginAnimations:@"Zoom" context:NULL];
-    [UIView setAnimationDuration:2.0];
+//    self.imageIcon.frame = CGRectMake(0.0f, 0.0f, 1024.0f, 768.0f);
+//    [UIView beginAnimations:@"Zoom" context:NULL];
+//    [UIView setAnimationDuration:2.0];
+//    
+//    self.imageIcon.frame = CGRectMake(0.0f, 0.0f, 10.0f, 10.0f);
+//    [UIView commitAnimations];
+ 
     
-    self.imageIcon.frame = CGRectMake(0.0f, 0.0f, 10.0f, 10.0f);
-    [UIView commitAnimations];
+    
+    FeedData* sharedSingleton = [FeedData sharedModel];
+    [sharedSingleton feedData];
+    self.displayingFeedData = [sharedSingleton feedData];
     
     
     
-    // tell the table view to auto adjust the height of each cell
+    NSLog(@"fffff %@", [sharedSingleton feedData]);
+    NSLog(@"displayingFeedData %@", [self.displayingFeedData objectAtIndex:0] );
+
+    
+    
+//     tell the table view to auto adjust the height of each cell
 //    self.tableView.rowHeight = UITableViewAutomaticDimension;
-//    self.tableView.estimatedRowHeight = 12.0;
+//    self.tableView.estimatedRowHeight = 19.0;
     
     // grab the nib from the main bundle
     UINib *nib = [UINib nibWithNibName:@"FeedsCell" bundle:nil];
@@ -60,7 +73,7 @@ UITableViewDelegate
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 1;
+    return 3;
 }
 
 -(UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -71,9 +84,8 @@ UITableViewDelegate
     cell.titleCell.text = @"title";
     NSLog(@"cell.titleCell.text %@",cell.titleCell.text);
     
-    cell.usernameCell.text = @"name";
+    cell.usernameCell.text = @"nameeeee";
     cell.tagsCell.text = @"tags";
-    
     
 //    @property (weak, nonatomic) IBOutlet UILabel *usernameCell;
 //    @property (weak, nonatomic) IBOutlet UILabel *titleCell;
@@ -88,6 +100,16 @@ UITableViewDelegate
 }
 
 
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(nonnull NSIndexPath *)indexPath{
+    
+    return 350.0;
+}
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 50.0;
+}
 
 /*
 #pragma mark - Navigation

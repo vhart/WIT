@@ -179,10 +179,10 @@
     
     //prepare rightBarItems
     YALTabBarItem *item3 = [[YALTabBarItem alloc] initWithItemImage:[UIImage imageNamed:@"audioIcon"]
-                                                      leftItemImage:[UIImage imageNamed:nil]
+                                                      leftItemImage:nil
                                                      rightItemImage:[UIImage imageNamed:@"audioIcon"]];
     YALTabBarItem *item4 = [[YALTabBarItem alloc] initWithItemImage:[UIImage imageNamed:@"videoIcon"]
-                                                      leftItemImage:[UIImage imageNamed:nil]
+                                                      leftItemImage:nil
                                                      rightItemImage:[UIImage imageNamed:@"videoIcon"]];
     
     
@@ -200,7 +200,7 @@
     tabBarController.tabBarView.backgroundColor = [UIColor clearColor];
     tabBarController.tabBarView.tabBarColor = [UIColor colorWithRed:0.714 green:0 blue:0.714 alpha:1];
     
-    tabBarController.tabBarViewHeight = YALTabBarViewDefaultHeight;
+    tabBarController.tabBarViewHeight = 10;
     tabBarController.tabBarView.tabBarViewEdgeInsets = YALTabBarViewHDefaultEdgeInsets;
     tabBarController.tabBarView.tabBarItemsEdgeInsets = YALTabBarViewItemsDefaultEdgeInsets;
     
