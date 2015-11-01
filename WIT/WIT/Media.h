@@ -8,6 +8,8 @@
 
 #import "PFObject.h"
 #import <Parse/Parse.h>
+#import <UIKit/UIKit.h>
+
 
 @interface Media : PFObject <PFSubclassing>
 
